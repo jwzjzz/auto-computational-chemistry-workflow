@@ -1,0 +1,3 @@
+outputs:
+- name: calculation result
+  value: 111.75700810049457

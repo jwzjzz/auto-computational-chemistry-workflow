@@ -1,0 +1,20 @@
+parameters:
+  - name: cos_para
+    value: 0.5
+    is_required: true
+  - name: sin_para
+    value: 0.5
+    is_required: true
+  - name: add_para
+    value:
+    is_required: false
+requirements:
+  - name: numpy
+    version: 
+  - name: math
+    version: 
+data_requirements:
+  - name: 123.cif
+    is_required: true  
+  - name: 456.cif
+    is_required: false
