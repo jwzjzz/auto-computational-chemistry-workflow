@@ -1,0 +1,5 @@
+{
+    "vis_wf": "flowchart TD\n    90b5fbe0-11a1-4b1e-92bf-55b42e874e8c(relax) -->|structure| 8b7c7350-fd1c-405f-af73-08622ae9c72a(get_stable_inserted_results)\n    90b5fbe0-11a1-4b1e-92bf-55b42e874e8c(relax) -->|entry, dir_name, structure| 14ebb286-9132-436d-8afc-882648523251(get_computed_entries)\n    8b7c7350-fd1c-405f-af73-08622ae9c72a(get_stable_inserted_results) -->|output| 14ebb286-9132-436d-8afc-882648523251(get_computed_entries)\n    14ebb286-9132-436d-8afc-882648523251(get_computed_entries) -->|output| 87282b0c-c306-4b6c-b073-301be70fd3b0(get_structure_group_doc)\n    90b5fbe0-11a1-4b1e-92bf-55b42e874e8c(relax)\n    8b7c7350-fd1c-405f-af73-08622ae9c72a(get_stable_inserted_results)\n    14ebb286-9132-436d-8afc-882648523251(get_computed_entries)\n    87282b0c-c306-4b6c-b073-301be70fd3b0(get_structure_group_doc)",
+    "project": "wf_ins_hfe",
+    "response": "['11819', '11820', '11821', '11822']"
+}

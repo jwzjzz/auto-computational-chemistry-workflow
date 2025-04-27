@@ -1,0 +1,5 @@
+{
+    "vis_wf": "flowchart TD\n    75bde510-2931-4f40-b3e1-7d8b1399244d(relax 1) -->|dir_name, structure| 293a5798-0e72-4ce7-b886-5235cd7bfe8b(relax 2)\n    75bde510-2931-4f40-b3e1-7d8b1399244d(relax 1)\n    293a5798-0e72-4ce7-b886-5235cd7bfe8b(relax 2)",
+    "project": "wfins_gpu",
+    "response": "['11733', '11734']"
+}

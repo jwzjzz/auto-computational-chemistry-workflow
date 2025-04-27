@@ -1,0 +1,5 @@
+{
+    "vis_wf": "flowchart TD\n    512089c6-a2e1-441b-b013-20b80cb609fc(relax 1) -->|dir_name, structure| 46795485-fb8c-4a6a-bcbf-88c1acbfde47(relax 2)\n    512089c6-a2e1-441b-b013-20b80cb609fc(relax 1)\n    46795485-fb8c-4a6a-bcbf-88c1acbfde47(relax 2)",
+    "project": "wfins_cm",
+    "response": "['11725', '11726']"
+}

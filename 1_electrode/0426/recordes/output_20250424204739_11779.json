@@ -1,0 +1,5 @@
+{
+    "vis_wf": "flowchart TD\n    cdcd407d-68d2-4193-8df4-610bc1ac05a0(relax) -->|structure| ff854975-f38b-40b2-b63c-83466d827f18(get_stable_inserted_results)\n    cdcd407d-68d2-4193-8df4-610bc1ac05a0(relax) -->|entry, dir_name, structure| 2304c527-ea4e-4ce8-a892-07f70f58825f(get_computed_entries)\n    ff854975-f38b-40b2-b63c-83466d827f18(get_stable_inserted_results) -->|output| 2304c527-ea4e-4ce8-a892-07f70f58825f(get_computed_entries)\n    2304c527-ea4e-4ce8-a892-07f70f58825f(get_computed_entries) -->|output| e2c288f2-786f-460d-aa05-f0e086683d59(get_structure_group_doc)\n    cdcd407d-68d2-4193-8df4-610bc1ac05a0(relax)\n    ff854975-f38b-40b2-b63c-83466d827f18(get_stable_inserted_results)\n    2304c527-ea4e-4ce8-a892-07f70f58825f(get_computed_entries)\n    e2c288f2-786f-460d-aa05-f0e086683d59(get_structure_group_doc)",
+    "project": "wfins_electrode_hfe",
+    "response": "['11779', '11780', '11781', '11782']"
+}

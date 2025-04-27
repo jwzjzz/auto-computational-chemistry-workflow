@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    c6b4e392-0a8a-4a45-be99-78cc1c717996(relax) -->|structure| 7351b297-2fec-4d05-8221-77c7a6bb95cf(get_stable_inserted_results)\n    c6b4e392-0a8a-4a45-be99-78cc1c717996(relax) -->|dir_name, entry, structure| 93bb82b4-0ffb-422d-b1de-ad4c3f0fed46(get_computed_entries)\n    7351b297-2fec-4d05-8221-77c7a6bb95cf(get_stable_inserted_results) -->|output| 93bb82b4-0ffb-422d-b1de-ad4c3f0fed46(get_computed_entries)\n    93bb82b4-0ffb-422d-b1de-ad4c3f0fed46(get_computed_entries) -->|output| 9063eab5-c620-451b-9846-3d5a2456e82b(get_structure_group_doc)\n    c6b4e392-0a8a-4a45-be99-78cc1c717996(relax)\n    7351b297-2fec-4d05-8221-77c7a6bb95cf(get_stable_inserted_results)\n    93bb82b4-0ffb-422d-b1de-ad4c3f0fed46(get_computed_entries)\n    9063eab5-c620-451b-9846-3d5a2456e82b(get_structure_group_doc)",
+    "project": "wf_ins_hfe",
+    "flow_identifier": "wf_instance_kvo_electrode",
+    "response": "['11943', '11944', '11945', '11946']"
+}

@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    16bf5bc9-84e6-499b-a353-525d4bfd1c8b(relax) -->|structure| f45339ec-503b-462c-9756-8d147f1c306a(get_stable_inserted_results)\n    16bf5bc9-84e6-499b-a353-525d4bfd1c8b(relax) -->|dir_name, structure, entry| e13e31c5-1061-4cbb-8292-a8b9fef570eb(get_computed_entries)\n    f45339ec-503b-462c-9756-8d147f1c306a(get_stable_inserted_results) -->|output| e13e31c5-1061-4cbb-8292-a8b9fef570eb(get_computed_entries)\n    e13e31c5-1061-4cbb-8292-a8b9fef570eb(get_computed_entries) -->|output| 69bb4a4a-dd7e-45d6-a635-01b098c83419(get_structure_group_doc)\n    16bf5bc9-84e6-499b-a353-525d4bfd1c8b(relax)\n    f45339ec-503b-462c-9756-8d147f1c306a(get_stable_inserted_results)\n    e13e31c5-1061-4cbb-8292-a8b9fef570eb(get_computed_entries)\n    69bb4a4a-dd7e-45d6-a635-01b098c83419(get_structure_group_doc)",
+    "project": "wf_dr_gpu",
+    "flow_identifier": "wf_instance_kvo_electrode",
+    "response": "['11959', '11960', '11961', '11962']"
+}

@@ -1,0 +1,3 @@
+# 工作流在hf_mat环境创建， jf在atomate2环境开启
+# 测试sc/hfe/cm/gpu
+    #修复update_incar部分设计 避免高精度导致超存储
