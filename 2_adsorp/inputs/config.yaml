@@ -11,9 +11,10 @@ maker:
     min_vacuum: 12.0  # 吸附相关参数
     min_slab_size: 9.0
     min_lw: 8.0
-    surface_idx: (1, 1, 1)
+    surface_idx: null
+    #(1, 1, 1)
   molecule_file: "./inputs/Na2S.cif"  # 吸附物分子文件路径
-  specified_element: "S"  # 用于对齐分子的指定元素
+  specified_element: "S"  # 用于对齐分子的指定元素或null 
   relax_maker: {}  # RelaxMaker 无额外参数，使用默认初始化
   static_maker:    # StaticMaker 专属参数
     task_document_kwargs: 

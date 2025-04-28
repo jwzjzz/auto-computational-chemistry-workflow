@@ -246,9 +246,22 @@ class VASPWorkflowBuilder:
                 return mpr.get_structure_by_material_id(input_data)
         else:
             raise ValueError("输入数据必须是文件路径或材料ID")
+    
+    def _get_molecule(self, input_file):
+        """
+        获取分子结构，可以是文件路径
+        :param input_file: 文件路径
+        :return: pymatgen Molecule 对象
+        """
+        if input_file.endswith(".cif"):
+            return Molecule.from_sites(Structure.from_file(input_file).sites)
+        elif input_file.endswith(".xyz"):
+            return Molecule.from_file(input_file)
+        else:
+            raise ValueError("输入数据必须是文件路径") 
 
     def _align_molecule_s(self, input_file, specified_element):
-        mol = self.get_molecule(input_file)
+        mol = self._get_molecule(input_file)
     
         specified_atom_positions = []
         other_atom_positions = []
@@ -325,7 +338,7 @@ class VASPWorkflowBuilder:
     
     def build_workflow(self, input_data: str, base_incar: Dict[str, Any] = None, parr_incar: Dict[str, Any] = None, **maker_kwargs):
         """
-        通用工作流构建方法，支持任意 Maker 专属参数
+        支持大多数 Maker 
         :param input_data: 结构输入（文件路径或材料ID）
         :param base_incar: 基础 INCAR 参数
         :param parr_incar: 并行/通用 INCAR 参数
@@ -344,6 +357,49 @@ class VASPWorkflowBuilder:
             flow = Flow([flow])
 
         return self._update_incar_settings(flow, parr_incar)
+    
+    def build_workflow_ads(self, input_data_s: str, input_data_m: str, specified_element: str = None, base_incar: Dict[str, Any] = None, parr_incar: Dict[str, Any] = None, **maker_kwargs):
+        """
+        用于AdsorptionMaker
+        :param input_data_s: 结构输入（文件路径或材料ID）
+        :param input_data_m: 分子输入（文件路径）
+        :param specified_element: 用于对齐分子的指定元素
+        :param base_incar: 基础 INCAR 参数
+        :param parr_incar: 并行/通用 INCAR 参数
+        :param maker_kwargs: 传递给 Maker.make() 的专属参数（如插层参数、 phonon 参数等）
+        """
+        try:
+            structure = self._get_structure(input_data_s)
+        except ValueError as e:
+            print(f"获取结构时出错: {e}")
+            return None
+
+        try:
+            if specified_element is None:
+                molecular = self._get_molecule(input_data_m)
+            else:
+                molecular = self._align_molecule_s(input_data_m, specified_element)
+        except ValueError as e:
+            print(f"获取分子时出错: {e}")
+            return None
+
+        base_incar = base_incar or VASPConfigManager.get_default_incar()
+        parr_incar = parr_incar or {}
+
+        # 调用 Maker 的 make 方法，传递专属参数
+        try:
+            flow = self.maker_instance.make(molecular,structure, **maker_kwargs)
+        except Exception as e:
+            print(f"调用 Maker.make 方法时出错: {e}")
+            return None
+
+        flow = update_user_incar_settings(flow, base_incar)  # 应用基础 INCAR 参数，所有动态job都可以继承
+
+        # 统一处理 Job 到 Flow 的转换
+        if isinstance(flow, Job):
+            flow = Flow([flow])
+
+        return self._update_incar_settings(flow, parr_incar)    
 
     def _update_incar_settings(self, flow, parr_incar: Dict[str, Any]):
         """更新 INCAR 参数，注意该方式不能处理动态生成的job"""

@@ -1,9 +1,14 @@
+
 import json
 import re
 from datetime import datetime
 import sys
 import yaml
 import os
+import logging
+from pymatgen.analysis.diffraction.xrd import XRDCalculator
+import numpy as np
+from pymatgen.core.structure import Structure
 
 sys.path.append('/Users/jzz/jzz_python/z_jupyter/1_jf/z_wf_instance')
 from jf_jzz import (
@@ -19,6 +24,26 @@ from jf_jzz import (
     StaticMaker,
     AdsorptionMaker,
 )
+
+
+def get_max_intensity_hkl(structure):
+    # 初始化 XRDCalculator
+    xrd_calculator = XRDCalculator(wavelength="CuKa")
+    # 计算 XRD 图谱
+    xrd_pattern = xrd_calculator.get_pattern(structure)
+    # 找出强度最大的峰的索引
+    max_intensity_index = np.argmax(xrd_pattern.y)
+    # 找出最大强度峰对应的 hkl
+    max_intensity_hkl = xrd_pattern.hkls[max_intensity_index]
+    hkl = max_intensity_hkl[0]['hkl']
+    # 如果是六方晶系的格式（四个指数），转换为三方晶系的格式（三个指数）
+    if len(hkl) == 4:
+        h, k, i, l = hkl
+        new_h = h
+        new_k = k
+        new_l = l
+        hkl = (new_h, new_k, new_l)
+    return hkl
 
 
 def run_workflow_from_config():
@@ -43,14 +68,18 @@ def run_workflow_from_config():
     base_incar = config.get("base_incar", VASPConfigManager.get_default_incar())
     parr_incar = config.get("parr_incar", {})
     maker_kwargs = config.get("maker_kwargs", {})  # 提取 Maker.make() 专属参数
-    maker_config = config["maker"]
+    maker_config = config.get("maker")
+    adsorption_params = maker_config.get('adsorption_maker')
+    specified_element = maker_config.get('specified_element')
+    molecule_file = maker_config.get('molecule_file')
+    input_data = config.get("input_data")
 
     try:
         if maker_config.get('class') == DoubleRelaxMaker.__name__:
             custom_maker = DoubleRelaxMaker()
             builder = VASPWorkflowBuilder(custom_maker)
             my_flow = builder.build_workflow(
-                input_data=config["input_data"],
+                input_data=input_data,
                 base_incar=base_incar,
                 parr_incar=parr_incar,
             )
@@ -65,20 +94,34 @@ def run_workflow_from_config():
             )
             builder = VASPWorkflowBuilder(custom_maker)
             my_flow = builder.build_workflow(
-                input_data=config["input_data"],
+                input_data=input_data,
                 base_incar=base_incar,
                 parr_incar=parr_incar,
                 **maker_kwargs  # 动态传递 Maker 专属参数（如插层参数）
             )
         elif maker_config.get('class') == AdsorptionMaker.__name__:
-            molecule = VASPWorkflowBuilder._align_molecule_s(molecule_file,specified_element)
+            # 处理 surface_idx 参数
+            if adsorption_params and'surface_idx' in adsorption_params:
+                surface_idx = adsorption_params['surface_idx']
+                if surface_idx is not None:
+                    if isinstance(surface_idx, str):
+                        surface_idx = tuple(int(x) for x in surface_idx.strip('()').split(','))
+                        adsorption_params['surface_idx'] = surface_idx
+                        logging.info(f"转换 surface_idx 为: {surface_idx}")
+                else:
+                    structure = Structure.from_file(input_data)
+                    new_surface_idx = get_max_intensity_hkl(structure)
+                    adsorption_params['surface_idx'] = new_surface_idx
+                    logging.info(f"计算得到的 surface_idx 为: {new_surface_idx}")
+            #
             custom_maker = AdsorptionMaker(**adsorption_params)
             builder = VASPWorkflowBuilder(custom_maker)
-            my_flow = builder.build_workflow(
-                input_data=config["input_data"],
+            my_flow = builder.build_workflow_ads(
+                input_data_s=input_data,
+                input_data_m=molecule_file,
+                specified_element=specified_element,
                 base_incar=base_incar,
                 parr_incar=parr_incar,
-                **maker_kwargs  # 动态传递 Maker 专属参数（如插层参数）
             )
         else:
             print(f"不支持的 maker 配置: {maker_config}")
@@ -129,4 +172,3 @@ def run_workflow_from_config():
 
 if __name__ == "__main__":
     run_workflow_from_config()
-

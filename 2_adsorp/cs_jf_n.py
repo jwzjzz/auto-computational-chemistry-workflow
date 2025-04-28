@@ -4,10 +4,8 @@ from datetime import datetime
 import sys
 import yaml
 import os
-import logging
+from pymatgen.core import Structure 
 from pymatgen.analysis.diffraction.xrd import XRDCalculator
-import numpy as np
-from pymatgen.core.structure import Structure
 
 sys.path.append('/Users/jzz/jzz_python/z_jupyter/1_jf/z_wf_instance')
 from jf_jzz import (
@@ -23,7 +21,6 @@ from jf_jzz import (
     StaticMaker,
     AdsorptionMaker,
 )
-
 
 def get_max_intensity_hkl(structure):
     # 初始化 XRDCalculator
@@ -43,7 +40,6 @@ def get_max_intensity_hkl(structure):
         new_l = l
         hkl = (new_h, new_k, new_l)
     return hkl
-
 
 def run_workflow_from_config():
     # 固定输入输出路径（当前目录下的 inputs/outputs）
@@ -71,8 +67,8 @@ def run_workflow_from_config():
     adsorption_params = maker_config.get('adsorption_maker')
     specified_element = maker_config.get('specified_element')
     molecule_file = maker_config.get('molecule_file')
-    input_data = config.get("input_data")
-
+    input_data = config.get("input_data") 
+    #
     try:
         if maker_config.get('class') == DoubleRelaxMaker.__name__:
             custom_maker = DoubleRelaxMaker()
@@ -101,17 +97,16 @@ def run_workflow_from_config():
         elif maker_config.get('class') == AdsorptionMaker.__name__:
             # 处理 surface_idx 参数
             if adsorption_params and'surface_idx' in adsorption_params:
-                surface_idx = adsorption_params['surface_idx']
-                if surface_idx is not None:
-                    if isinstance(surface_idx, str):
-                        surface_idx = tuple(int(x) for x in surface_idx.strip('()').split(','))
-                        adsorption_params['surface_idx'] = surface_idx
-                        logging.info(f"转换 surface_idx 为: {surface_idx}")
+                surface_idx_str = str(adsorption_params['surface_idx'])
+                if surface_idx_str != str(None):
+                    surface_idx = tuple(int(x) for x in surface_idx_str.strip('()').split(','))
+                    adsorption_params['surface_idx'] = surface_idx
+                    logging.info(f"转换 surface_idx 为: {surface_idx}")
                 else:
                     structure = Structure.from_file(input_data)
                     new_surface_idx = get_max_intensity_hkl(structure)
                     adsorption_params['surface_idx'] = new_surface_idx
-                    logging.info(f"计算得到的 surface_idx 为: {new_surface_idx}")
+                    logging.info(f"计算得到的 surface_idx 为: {new_surface_idx}")    
             #
             custom_maker = AdsorptionMaker(**adsorption_params)
             builder = VASPWorkflowBuilder(custom_maker)
