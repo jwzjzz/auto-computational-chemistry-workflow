@@ -1,0 +1,27 @@
+project: "wf_md_sc"
+worker_n: "sc"
+input_data: "./inputs/md_structure.cif"
+flow_identifier: "wf_instance_md"
+md_ref: null  # 若需重启，填写之前任务的 UUID
+
+maker:
+  class: "MultiMDMaker"
+  md_maker:
+    temperature_steps: [300, 600, 900]  # 升温步骤的温度列表（单位：K）
+    steps_per_md: 5000  # 每个温度下的 MD 步数
+    time_step: 2  # 时间步长（单位：fs）
+    nsw_per_step: 100  # 每步写入频率
+    potim: 1.0  # MD 步长（单位：fs）
+    ibrion: 0  # MD 算法模式
+    nvt_params:  # 可选 NVT 参数
+      smass: 1.0
+      tmode: "cubic"
+
+base_incar:  # 基础 MD INCAR 参数
+  ENCUT: 400
+  EDIFF: 1e-4
+  PREC: "Normal"
+
+parr_incar:  # 并行参数
+  KPAR: 4
+  NCORE: 16

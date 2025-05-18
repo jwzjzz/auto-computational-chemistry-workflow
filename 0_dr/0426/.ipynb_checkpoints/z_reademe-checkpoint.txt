@@ -1,0 +1,18 @@
+# 工作流在hf_mat环境创建， jf在atomate2环境开启
+
+# 测试sc/hfe/cm/gpu
+    #sc 成功
+    #hfe 成功
+        #hfe 有问题: pydantic_core._pydantic_core.ValidationError
+            # 检查环境:
+                # 与sc不一致 emmet-core 0.84.3rc4
+                # pip install --upgrade emmet-core==0.84.6rc6
+            # 问题解决
+    #gpu 成功！！！！！！！！！！！
+        #老问题：jf远程控制作业提交导致mpi初始化失败，同样的submit.sh手动提交没问题！！！
+        #检查环境 发现jf自动激活conda不能加载.bashrc 中配置的：
+            # JOBFLOW_CONFIG_FILE 和 ATOMATE2_CONFIG_FILE 和 FW_CONFIG_FILE
+
+    #cm ing
+
+

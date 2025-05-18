@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    b0ac9f3a-9c3f-4ec7-bae2-661061e42812(relax) -->|structure| 92f5c3cc-3fb5-4f23-8e87-c463a13ecc25(get_stable_inserted_results)\n    b0ac9f3a-9c3f-4ec7-bae2-661061e42812(relax) -->|dir_name, structure, entry| 2e15c09b-1cd9-4ed8-8b66-f6942b8741f9(get_computed_entries)\n    92f5c3cc-3fb5-4f23-8e87-c463a13ecc25(get_stable_inserted_results) -->|output| 2e15c09b-1cd9-4ed8-8b66-f6942b8741f9(get_computed_entries)\n    2e15c09b-1cd9-4ed8-8b66-f6942b8741f9(get_computed_entries) -->|output| 08d16cab-81ef-4cdb-8830-a1160a9b53be(get_structure_group_doc)\n    b0ac9f3a-9c3f-4ec7-bae2-661061e42812(relax)\n    92f5c3cc-3fb5-4f23-8e87-c463a13ecc25(get_stable_inserted_results)\n    2e15c09b-1cd9-4ed8-8b66-f6942b8741f9(get_computed_entries)\n    08d16cab-81ef-4cdb-8830-a1160a9b53be(get_structure_group_doc)",
+    "project": "wf_lhl_sc",
+    "flow_identifier": "kvo_electrode",
+    "response": "['12081', '12082', '12083', '12084']"
+}

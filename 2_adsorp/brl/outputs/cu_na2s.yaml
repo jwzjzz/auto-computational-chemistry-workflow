@@ -1,0 +1,31 @@
+# 项目基础信息
+project: "wf_brl_sc"
+worker_n: "sc"
+input_data: "./inputs/Cu.cif"  # 结构输入路径/材料ID
+flow_identifier: "ads_cu"
+
+# Maker 实例化参数（包括子 Maker）
+maker:
+  class: "AdsorptionMaker"  # Maker 类型
+  adsorption_maker:
+    min_vacuum: 12.0  # 吸附相关参数
+    min_slab_size: 9.0
+    min_lw: 8.0
+    surface_idx: null
+    #(1, 1, 1)
+  molecule_file: "./inputs/Na2S.cif"  # 吸附物分子文件路径
+  specified_element: "S"  # 用于对齐分子的指定元素或null 
+  relax_maker: {}  # RelaxMaker 无额外参数，使用默认初始化
+  static_maker:    # StaticMaker 专属参数
+    task_document_kwargs: 
+      store_volumetric_data: []  # 传递给 StaticMaker 的初始化参数
+
+# 工作流构建参数（包括 INCAR 参数和 Maker 专属参数）
+base_incar: {}  # 基础 INCAR 参数（可选，默认值由代码提供）
+parr_incar:     # 并行 INCAR 参数
+  KPAR: 4
+  NCORE: 16
+maker_kwargs:    # 传递给 ElectrodeInsertionMaker.make() 的专属参数
+  inserted_element: "Zn"
+  n_steps: 1
+  insertions_per_step: 1

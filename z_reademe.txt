@@ -1,3 +1,10 @@
+python fix_jf.py 12353 wf_brl_sc --incar '{"NCORE":1,"KPAR":1}' --ssh_host sc
+
+jf -p wf_brl_sc admin remove-lock -did 12360
+# jc.unlock_flows(job_ids="1dfa1731-7723-4b95-932d-8cfaf29827ef")
+
+python fix_jf.py 11983 wf_dr_jzz --ssh_host jzz
+
 # 工作流在hf_mat环境创建， jf在atomate2环境开启
 
 # doublerelax 
