@@ -1,0 +1,38 @@
+project: wf_lhl_sc
+worker_n: sc
+flow_identifier: kvo_131_per_new_electrode
+input_data: ./inputs/kvo_per_131.vasp
+entry_data: ./inputs/zn_entry.json
+maker:
+  class: ElectrodeInsertionMaker
+  #
+  adsorption_maker:
+    min_vacuum: 12.0
+    min_slab_size: 9.0
+    min_lw: 8.0
+    surface_idx: ~
+  molecule_file: ./inputs/Na2S8.cif
+  specified_element: S
+  #
+  relax_maker: {}
+  static_maker:
+    task_document_kwargs:
+      store_volumetric_data: [chgcar,aeccar0,aeccar1,aeccar2]
+#base_incar: {}
+base_incar: 
+  ENCUT: 520
+  PREC: Normal
+  EDIFF: 1e-5
+  EDIFFG: -0.05
+  GGA: PE
+  ISPIN: 2
+  ISIF: 2
+  ISMEAR: 0
+  IVDW: 12
+parr_incar:
+  KPAR: 4
+  NCORE: 16
+maker_kwargs:
+  inserted_element: Zn
+  n_steps: 10
+  insertions_per_step: 10

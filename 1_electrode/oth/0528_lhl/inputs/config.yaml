@@ -1,0 +1,32 @@
+project: wf_lhl_gpu
+worker_n: gpu
+input_data: ./inputs/kvo_n_dr_1__-227.850.cif
+flow_identifier: electrode_kvo_per
+maker:
+  class: ElectrodeInsertionMaker
+  adsorption_maker:
+    min_vacuum: 12.0
+    min_slab_size: 9.0
+    min_lw: 8.0
+    surface_idx: ~
+  molecule_file: ./inputs/Na2S.cif
+  specified_element: S
+  relax_maker: {}
+  static_maker:
+    task_document_kwargs:
+      store_volumetric_data: []
+base_incar: 
+  ENCUT: 520
+  EDIFF: 1e-5
+  EDIFFG: -0.02
+  GGA:PE
+  ISPIN:2
+  ISMEAR:0
+  IVDW:12
+parr_incar:
+  KPAR: 4
+  NCORE: 16
+maker_kwargs:
+  inserted_element: Zn
+  n_steps: 1
+  insertions_per_step: 1

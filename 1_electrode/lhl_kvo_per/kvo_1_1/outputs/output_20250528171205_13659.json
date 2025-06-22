@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    dadf07d2-d859-449b-aa61-7a26a469a81a(relax) -->|structure| ea1f7757-ae6b-4ef9-a59c-a6d394a2c794(get_stable_inserted_results)\n    dadf07d2-d859-449b-aa61-7a26a469a81a(relax) -->|dir_name, entry, structure| eff79145-d64a-4143-bdf9-84a7cd4937f3(get_computed_entries)\n    ea1f7757-ae6b-4ef9-a59c-a6d394a2c794(get_stable_inserted_results) -->|output| eff79145-d64a-4143-bdf9-84a7cd4937f3(get_computed_entries)\n    eff79145-d64a-4143-bdf9-84a7cd4937f3(get_computed_entries) -->|output| be74147c-4417-41e3-8bc6-93a137437209(get_structure_group_doc)\n    dadf07d2-d859-449b-aa61-7a26a469a81a(relax)\n    ea1f7757-ae6b-4ef9-a59c-a6d394a2c794(get_stable_inserted_results)\n    eff79145-d64a-4143-bdf9-84a7cd4937f3(get_computed_entries)\n    be74147c-4417-41e3-8bc6-93a137437209(get_structure_group_doc)",
+    "project": "wf_lhl_gpu",
+    "flow_identifier": "kvo_electrode",
+    "response": "['13659', '13660', '13661', '13662']"
+}

@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    90529f98-08aa-47d4-b575-94997c1f4a1b(hse static) -->|structure, dir_name| 6104979b-343a-41b4-aa4b-9a68de20b195(hse optics)\n    90529f98-08aa-47d4-b575-94997c1f4a1b(hse static)\n    6104979b-343a-41b4-aa4b-9a68de20b195(hse optics)",
+    "project": "wf_ai_gpu",
+    "flow_identifier": "hseopt",
+    "response": "['17032', '17033']"
+}

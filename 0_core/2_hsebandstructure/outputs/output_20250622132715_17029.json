@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    889666c1-970a-4afc-82ba-f324a786c994(hse static) -->|dir_name, structure| f39ba29e-e74f-4f9b-9f4b-59911e1bffca(hse band structure uniform)\n    889666c1-970a-4afc-82ba-f324a786c994(hse static) -->|dir_name, structure| d6dced3f-af04-4d32-b8f4-1fa2d1c6223e(hse band structure line)\n    889666c1-970a-4afc-82ba-f324a786c994(hse static)\n    f39ba29e-e74f-4f9b-9f4b-59911e1bffca(hse band structure uniform)\n    d6dced3f-af04-4d32-b8f4-1fa2d1c6223e(hse band structure line)",
+    "project": "wf_ai_gpu",
+    "flow_identifier": "bands",
+    "response": "['17029', '17030', '17031']"
+}

@@ -1,0 +1,10 @@
+读取配置文件时出错: while scanning a simple key
+  in "inputs/config.yaml", line 21, column 3
+could not find expected ':'
+  in "inputs/config.yaml", line 22, column 3
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_lhl_gpu.yaml
+['13659', '13660', '13661', '13662']
+数据已保存到 outputs/output_20250528171205_13659.json
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_lhl_gpu.yaml
+['13942', '13943', '13944', '13945']
+数据已保存到 outputs/output_20250528232833_13942.json

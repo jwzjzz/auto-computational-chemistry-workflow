@@ -1,0 +1,25 @@
+project: wf_brl_hfe
+worker_n: hfe
+input_data: ./inputs/Co2Ni.cif
+flow_identifier: ads_co2ni
+maker:
+  class: AdsorptionMaker
+  adsorption_maker:
+    min_vacuum: 12.0
+    min_slab_size: 9.0
+    min_lw: 8.0
+    surface_idx: ~
+  molecule_file: ./inputs/Na2S.cif
+  specified_element: S
+  relax_maker: {}
+  static_maker:
+    task_document_kwargs:
+      store_volumetric_data: []
+base_incar: {}
+parr_incar:
+  KPAR: 4
+  NCORE: 16
+maker_kwargs:
+  inserted_element: Co2Ni
+  n_steps: 1
+  insertions_per_step: 1

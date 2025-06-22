@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    e03dd864-015a-4c48-81b6-ee1af5dd05b0(relax) -->|structure| 7de5657e-9e78-4953-b196-721353b30eb9(get_stable_inserted_results)\n    e03dd864-015a-4c48-81b6-ee1af5dd05b0(relax) -->|structure, entry, dir_name| ed49b3c1-b53b-4ed2-b603-ba2513979d8f(get_computed_entries)\n    7de5657e-9e78-4953-b196-721353b30eb9(get_stable_inserted_results) -->|output| ed49b3c1-b53b-4ed2-b603-ba2513979d8f(get_computed_entries)\n    ed49b3c1-b53b-4ed2-b603-ba2513979d8f(get_computed_entries) -->|output| 9d72e492-0595-4106-be75-70ee45121dcf(get_structure_group_doc)\n    ed49b3c1-b53b-4ed2-b603-ba2513979d8f(get_computed_entries) -->|output| f8064ec7-549b-480f-96ab-49be5899990a(get_insertion_electrode_doc)\n    e03dd864-015a-4c48-81b6-ee1af5dd05b0(relax)\n    7de5657e-9e78-4953-b196-721353b30eb9(get_stable_inserted_results)\n    ed49b3c1-b53b-4ed2-b603-ba2513979d8f(get_computed_entries)\n    9d72e492-0595-4106-be75-70ee45121dcf(get_structure_group_doc)\n    f8064ec7-549b-480f-96ab-49be5899990a(get_insertion_electrode_doc)",
+    "project": "wf_ai_gpu",
+    "flow_identifier": "test_electrode",
+    "response": "['16964', '16965', '16966', '16967', '16968']"
+}

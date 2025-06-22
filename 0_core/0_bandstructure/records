@@ -1,0 +1,3 @@
+不支持的 maker 配置: {'class': 'BandStructureMaker', 'relax_maker': {}, 'static_maker': {'task_document_kwargs': {'store_volumetric_data': []}}}
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_ai_gpu.yaml
+数据已保存到 outputs/output_20250622122030_17026.json

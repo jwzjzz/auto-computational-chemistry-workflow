@@ -1,6 +1,11 @@
 python fix_jf.py 12353 wf_brl_sc --incar '{"NCORE":1,"KPAR":1}' --ssh_host sc
+python fix_jf.py 14088 wf_lhl_gpu --incar '{"NSW":499,"ALGO":"Normal","SIGMA":"0.1"}' --ssh_host gpu
 
-jf -p wf_brl_sc admin remove-lock -did 12360
+#jf -p wf_brl_brl flow list -did 16571
+#jf -p wf_brl_brl job list -fid c36ae312-a663-4dec-8be6-14d891a55b74
+
+jf -p wf_brl_sc admin unlock -did 12360
+# jc = JobController.from_project_name('wf_lhl_gpu')
 # jc.unlock_flows(job_ids="1dfa1731-7723-4b95-932d-8cfaf29827ef")
 
 python fix_jf.py 11983 wf_dr_jzz --ssh_host jzz
@@ -28,8 +33,13 @@ python fix_jf.py 11983 wf_dr_jzz --ssh_host jzz
   # gpu
     修复update_incar部分设计 避免高精度导致超存储
     # 问题是这样还是不能给动态工作流的任务更新并行参数
+  # 修改源代码测试是否解决超存储问题：https://github.com/materialsproject/atomate2/pull/1055
+
 
 # adsorption
   # gpu
     修复surface_index配置问题
     配置vasp_gam命令 避免分子体系计算mpi初始化失败
+
+#
+pip install atomate2[strict]==0.0.18 -i https://pypi.tuna.tsinghua.edu.cn/simple

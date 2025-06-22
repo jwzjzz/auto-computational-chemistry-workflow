@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    4b07e448-ba19-466a-9e6e-ff7ce5b57598(relax) -->|structure| 4a0e5c9f-cd27-4c34-9b08-2266be15f58e(get_stable_inserted_results)\n    4b07e448-ba19-466a-9e6e-ff7ce5b57598(relax) -->|entry, dir_name, structure| 5e3d6b79-d5ac-4229-8bc1-6de8702e670b(get_computed_entries)\n    4a0e5c9f-cd27-4c34-9b08-2266be15f58e(get_stable_inserted_results) -->|output| 5e3d6b79-d5ac-4229-8bc1-6de8702e670b(get_computed_entries)\n    5e3d6b79-d5ac-4229-8bc1-6de8702e670b(get_computed_entries) -->|output| 54ddbf51-1a63-4ee9-b027-a3f20d9b2f81(get_structure_group_doc)\n    5e3d6b79-d5ac-4229-8bc1-6de8702e670b(get_computed_entries) -->|output| 6f8c0eaf-5215-417a-bfc6-dcd40781086e(get_insertion_electrode_doc)\n    4b07e448-ba19-466a-9e6e-ff7ce5b57598(relax)\n    4a0e5c9f-cd27-4c34-9b08-2266be15f58e(get_stable_inserted_results)\n    5e3d6b79-d5ac-4229-8bc1-6de8702e670b(get_computed_entries)\n    54ddbf51-1a63-4ee9-b027-a3f20d9b2f81(get_structure_group_doc)\n    6f8c0eaf-5215-417a-bfc6-dcd40781086e(get_insertion_electrode_doc)",
+    "project": "wf_lhl_sc",
+    "flow_identifier": "kvo_131_per_new_electrode",
+    "response": "['17011', '17012', '17013', '17014', '17015']"
+}

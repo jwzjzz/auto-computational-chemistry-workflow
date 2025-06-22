@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    e981cd61-d529-45aa-b425-a376c9917833(relax) -->|structure| 0f9b10d0-905c-40a1-8745-9582b8778057(get_stable_inserted_results)\n    e981cd61-d529-45aa-b425-a376c9917833(relax) -->|entry, structure, dir_name| 4bbcadba-e84f-42f1-b627-e6e5c8496e8c(get_computed_entries)\n    0f9b10d0-905c-40a1-8745-9582b8778057(get_stable_inserted_results) -->|output| 4bbcadba-e84f-42f1-b627-e6e5c8496e8c(get_computed_entries)\n    4bbcadba-e84f-42f1-b627-e6e5c8496e8c(get_computed_entries) -->|output| 27dcd3a4-5305-4a9f-889d-e8baa262dab7(get_structure_group_doc)\n    e981cd61-d529-45aa-b425-a376c9917833(relax)\n    0f9b10d0-905c-40a1-8745-9582b8778057(get_stable_inserted_results)\n    4bbcadba-e84f-42f1-b627-e6e5c8496e8c(get_computed_entries)\n    27dcd3a4-5305-4a9f-889d-e8baa262dab7(get_structure_group_doc)",
+    "project": "wf_brl_hfe",
+    "flow_identifier": "kvo_electrode",
+    "response": "['16958',]"
+}

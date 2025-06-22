@@ -1,7 +1,7 @@
 # 项目基础信息
 project: "wf_dr_gpu"
 worker_n: "gpu"
-input_data: "./inputs/kvo.vasp"  # 结构输入路径/材料ID
+input_data: "./inputs/kvo_n_dr_1__-227.850.cif"  # 结构输入路径/材料ID
 flow_identifier: "wf_instance_kvo_electrode"
 
 # Maker 实例化参数（包括子 Maker）
@@ -13,7 +13,14 @@ maker:
       store_volumetric_data: []  # 传递给 StaticMaker 的初始化参数
 
 # 工作流构建参数（包括 INCAR 参数和 Maker 专属参数）
-base_incar: {}  # 基础 INCAR 参数（可选，默认值由代码提供）
+base_incar: 
+  ENCUT: 520
+  EDIFF: 1e-5
+  EDIFFG: -0.02
+  GGA:PE
+  ISPIN:2
+  ISMEAR:0
+  IVDW:12
 parr_incar:     # 并行 INCAR 参数
   KPAR: 4
   NCORE: 16

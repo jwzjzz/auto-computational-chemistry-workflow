@@ -1,0 +1,7 @@
+不支持的 maker 配置: {'class': 'BandStructureMaker', 'relax_maker': {}, 'static_maker': {'task_document_kwargs': {'store_volumetric_data': []}}}
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_ai_gpu.yaml
+数据已保存到 outputs/output_20250622122030_17026.json
+构建工作流时出错: [Errno 2] No such file or directory: './inputs/Si_mp-149_computed.cif'
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_ai_gpu.yaml
+['17029', '17030', '17031']
+数据已保存到 outputs/output_20250622132715_17029.json

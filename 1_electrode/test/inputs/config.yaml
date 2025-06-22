@@ -1,0 +1,38 @@
+project: wf_ai_gpu
+worker_n: gpu
+flow_identifier: test_electrode
+input_data: ./inputs/C4.vasp
+entry_data: ./inputs/H_entry.json
+maker:
+  class: ElectrodeInsertionMaker
+  #
+  adsorption_maker:
+    min_vacuum: 12.0
+    min_slab_size: 9.0
+    min_lw: 8.0
+    surface_idx: ~
+  molecule_file: ./inputs/Na2S8.cif
+  specified_element: S
+  #
+  relax_maker: {}
+  static_maker:
+    task_document_kwargs:
+      store_volumetric_data: [chgcar,aeccar0,aeccar1,aeccar2]
+#base_incar: {}
+base_incar: 
+  ENCUT: 520
+  PREC: Normal
+  EDIFF: 1e-5
+  EDIFFG: -0.05
+  ISPIN: 1
+  ISIF: 2
+  NGX: 18 
+  NGY: 18 
+  NGZ: 60 
+parr_incar:
+  KPAR: 4
+  NCORE: 16
+maker_kwargs:
+  inserted_element: H
+  n_steps: 2
+  insertions_per_step: 5

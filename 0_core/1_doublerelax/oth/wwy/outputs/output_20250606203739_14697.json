@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    dd034a01-ee3f-47b2-b9e4-82fd38afe7a2(relax 1) -->|dir_name, structure| 2207fdc8-63fc-40d0-986f-1c13e18ada06(relax 2)\n    dd034a01-ee3f-47b2-b9e4-82fd38afe7a2(relax 1)\n    2207fdc8-63fc-40d0-986f-1c13e18ada06(relax 2)",
+    "project": "wwy_dr",
+    "flow_identifier": "wf_relax",
+    "response": "['14697', '14698']"
+}

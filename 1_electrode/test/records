@@ -1,0 +1,4 @@
+构建工作流时出错: ElectrodeInsertionMaker.make() got multiple values for argument 'inserted_element'
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_ai_gpu.yaml
+['16964', '16965', '16966', '16967', '16968']
+数据已保存到 outputs/output_20250620195817_16964.json

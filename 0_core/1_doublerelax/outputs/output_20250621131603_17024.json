@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    e0ba69a4-57ad-4f79-ac2b-cee6d085c0d7(relax 1) -->|structure, dir_name| 80a368bf-2c67-4939-8211-1bbe2c9815db(relax 2)\n    e0ba69a4-57ad-4f79-ac2b-cee6d085c0d7(relax 1)\n    80a368bf-2c67-4939-8211-1bbe2c9815db(relax 2)",
+    "project": "wf_dr_brl",
+    "flow_identifier": "CoO_slab_dr",
+    "response": "['17024', '17025']"
+}

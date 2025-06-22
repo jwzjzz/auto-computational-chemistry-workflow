@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    b102c51f-3f64-4247-a5f7-1b61e8d71eba(relax) -->|structure| f2da18aa-a243-4359-a44b-85d889cefdec(get_stable_inserted_results)\n    b102c51f-3f64-4247-a5f7-1b61e8d71eba(relax) -->|entry, dir_name, structure| 942e2e0c-3022-4644-99db-bf0cd636abd2(get_computed_entries)\n    f2da18aa-a243-4359-a44b-85d889cefdec(get_stable_inserted_results) -->|output| 942e2e0c-3022-4644-99db-bf0cd636abd2(get_computed_entries)\n    942e2e0c-3022-4644-99db-bf0cd636abd2(get_computed_entries) -->|output| 02fe9633-fb25-42a0-ba2a-9ad22b834800(get_structure_group_doc)\n    b102c51f-3f64-4247-a5f7-1b61e8d71eba(relax)\n    f2da18aa-a243-4359-a44b-85d889cefdec(get_stable_inserted_results)\n    942e2e0c-3022-4644-99db-bf0cd636abd2(get_computed_entries)\n    02fe9633-fb25-42a0-ba2a-9ad22b834800(get_structure_group_doc)",
+    "project": "wf_prr_gpu",
+    "flow_identifier": "lsm_electrode",
+    "response": "['16898', '16899', '16900', '16901']"
+}

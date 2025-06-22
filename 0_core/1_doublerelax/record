@@ -1,0 +1,102 @@
+Full Formula (K2 V8 O20)
+Reduced Formula: KV4O10
+abc   :  11.688000   3.668000   9.505000
+angles:  90.000000  92.240000  90.000000
+pbc   :       True       True       True
+Sites (30)
+  #  SP         a    b       c
+---  ----  ------  ---  ------
+  0  K     0.5935  0    0.4763
+  1  K     0.0935  0.5  0.4763
+  2  V     0.0609  0    0.8457
+  3  V     0.9391  0    0.1543
+  4  V     0.5609  0.5  0.8457
+  5  V     0.4391  0.5  0.1543
+  6  V     0.763   0    0.8448
+  7  V     0.237   0    0.1552
+  8  V     0.263   0.5  0.8448
+  9  V     0.737   0.5  0.1552
+ 10  O     0.5964  0    0.8756
+ 11  O     0.4036  0    0.1244
+ 12  O     0.0964  0.5  0.8756
+ 13  O     0.9036  0.5  0.1244
+ 14  O     0.917   0    0.9047
+ 15  O     0.083   0    0.0953
+ 16  O     0.417   0.5  0.9047
+ 17  O     0.583   0.5  0.0953
+ 18  O     0.2367  0    0.8904
+ 19  O     0.7633  0    0.1096
+ 20  O     0.7367  0.5  0.8904
+ 21  O     0.2633  0.5  0.1096
+ 22  O     0.0427  0    0.6773
+ 23  O     0.9573  0    0.3227
+ 24  O     0.5427  0.5  0.6773
+ 25  O     0.4573  0.5  0.3227
+ 26  O     0.7723  0    0.6773
+ 27  O     0.2277  0    0.3227
+ 28  O     0.2723  0.5  0.6773
+ 29  O     0.7277  0.5  0.3227
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+提交错误: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68359afc798c6d505d85f471, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+提交工作流时出错: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68359afc798c6d505d85f471, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Full Formula (K2 V8 O20)
+Reduced Formula: KV4O10
+abc   :  11.688000   3.668000   9.505000
+angles:  90.000000  92.240000  90.000000
+pbc   :       True       True       True
+Sites (30)
+  #  SP         a    b       c
+---  ----  ------  ---  ------
+  0  K     0.5935  0    0.4763
+  1  K     0.0935  0.5  0.4763
+  2  V     0.0609  0    0.8457
+  3  V     0.9391  0    0.1543
+  4  V     0.5609  0.5  0.8457
+  5  V     0.4391  0.5  0.1543
+  6  V     0.763   0    0.8448
+  7  V     0.237   0    0.1552
+  8  V     0.263   0.5  0.8448
+  9  V     0.737   0.5  0.1552
+ 10  O     0.5964  0    0.8756
+ 11  O     0.4036  0    0.1244
+ 12  O     0.0964  0.5  0.8756
+ 13  O     0.9036  0.5  0.1244
+ 14  O     0.917   0    0.9047
+ 15  O     0.083   0    0.0953
+ 16  O     0.417   0.5  0.9047
+ 17  O     0.583   0.5  0.0953
+ 18  O     0.2367  0    0.8904
+ 19  O     0.7633  0    0.1096
+ 20  O     0.7367  0.5  0.8904
+ 21  O     0.2633  0.5  0.1096
+ 22  O     0.0427  0    0.6773
+ 23  O     0.9573  0    0.3227
+ 24  O     0.5427  0.5  0.6773
+ 25  O     0.4573  0.5  0.3227
+ 26  O     0.7723  0    0.6773
+ 27  O     0.2277  0    0.3227
+ 28  O     0.2723  0.5  0.6773
+ 29  O     0.7277  0.5  0.3227
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250527190036_13644.json
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250527191133_13646.json
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250527191246_13648.json
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250527191316_13650.json
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250527191348_13652.json
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250527191448_13654.json
+构建工作流时出错: 输入数据必须是文件路径或材料ID
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_ai.yaml
+提交错误: 192.168.39.3:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68558855d05c96fb11ca5ee4, topology_type: Unknown, servers: [<ServerDescription ('192.168.39.3', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.39.3:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+提交工作流时出错: 192.168.39.3:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68558855d05c96fb11ca5ee4, topology_type: Unknown, servers: [<ServerDescription ('192.168.39.3', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.39.3:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250621001445_16991.json
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_gpu.yaml
+数据已保存到 outputs/output_20250621013741_17001.json
+构建工作流时出错: [Errno 2] No such file or directory: 'CONTCAR_CoO_slab.vasp'
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_dr_brl.yaml
+数据已保存到 outputs/output_20250621131603_17024.json

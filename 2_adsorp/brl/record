@@ -1,0 +1,248 @@
+python cs_jf.py 
+./inputs/Co2Ni.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['12972', '12973', '12974', '12975', '12976', '12977', '12978', '12979', '12980']
+数据已保存到 outputs/output_20250522171559_12972.json
+
+python cs_jf.py 
+./inputs/CoNi2.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['12981', '12982', '12983', '12984', '12985', '12986', '12987', '12988', '12989']
+数据已保存到 outputs/output_20250522172309_12981.json
+
+python cs_jf.py 
+./inputs/CoNi2.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13021', '13022', '13023', '13024', '13025', '13026', '13027', '13028', '13029']
+数据已保存到 outputs/output_20250523084426_13021.json
+
+暂停重复：python cs_jf.py 
+./inputs/CoNi2.cif ./inputs/Na2S.cifdd
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13030', '13031', '13032', '13033', '13034', '13035', '13036', '13037', '13038']
+数据已保存到 outputs/output_20250523085154_13030.json
+
+python cs_jf.py 
+./inputs/CoNi8.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13039', '13040', '13041', '13042', '13043', '13044', '13045', '13046', '13047']
+数据已保存到 outputs/output_20250523085616_13039.jsonOA
+./inputs/CoNi8.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13048', '13049', '13050', '13051', '13052', '13053', '13054', '13055', '13056']
+数据已保存到 outputs/output_20250523085756_13048.json
+./inputs/Cu2Ni.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['13191', '13192', '13193', '13194', '13195', '13196', '13197', '13198', '13199']
+数据已保存到 outputs/output_20250523114603_13191.json
+./inputs/Cu2Ni.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['13200', '13201', '13202', '13203', '13204', '13205', '13206', '13207', '13208']
+数据已保存到 outputs/output_20250523114714_13200.json
+./inputs/Cu4Ni.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['13209', '13210', '13211', '13212', '13213', '13214', '13215', '13216', '13217']
+数据已保存到 outputs/output_20250523114901_13209.json
+./inputs/Cu4Ni.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['13218', '13219', '13220', '13221', '13222', '13223', '13224', '13225', '13226']
+数据已保存到 outputs/output_20250523114952_13218.json
+./inputs/Cu8Ni.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13377', '13378', '13379', '13380', '13381', '13382', '13383', '13384', '13385']
+数据已保存到 outputs/output_20250524103427_13377.json
+./inputs/Cu8Ni.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13386', '13387', '13388', '13389', '13390', '13391', '13392', '13393', '13394']
+数据已保存到 outputs/output_20250524103453_13386.json
+./inputs/Fe2Co.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13395', '13396', '13397', '13398', '13399', '13400', '13401', '13402', '13403']
+数据已保存到 outputs/output_20250524103648_13395.json
+./inputs/Fe2Co.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['13404', '13405', '13406', '13407', '13408', '13409', '13410', '13411', '13412']
+数据已保存到 outputs/output_20250524103728_13404.json
+./inputs/TiCu.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['13663', '13664', '13665', '13666', '13667', '13668', '13669', '13670', '13671']
+数据已保存到 outputs/output_20250528171812_13663.json
+./inputs/TiCu.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['13672', '13673', '13674', '13675', '13676', '13677', '13678', '13679', '13680']
+数据已保存到 outputs/output_20250528171842_13672.json
+./inputs/TiCo.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['13681', '13682', '13683', '13684', '13685', '13686', '13687', '13688', '13689']
+数据已保存到 outputs/output_20250528172311_13681.json
+./inputs/TiCo.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['13690', '13691', '13692', '13693', '13694', '13695', '13696', '13697', '13698']
+数据已保存到 outputs/output_20250528172332_13690.json
+./inputs/Fe5Co3.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['14093', '14094', '14095', '14096', '14097', '14098', '14099', '14100', '14101']
+数据已保存到 outputs/output_20250602092029_14093.json
+./inputs/Fe5Co3.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['14102', '14103', '14104', '14105', '14106', '14107', '14108', '14109', '14110']
+数据已保存到 outputs/output_20250602092104_14102.json
+./inputs/ZnNi.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14111', '14112', '14113', '14114', '14115', '14116', '14117', '14118', '14119']
+数据已保存到 outputs/output_20250602092549_14111.json
+./inputs/ZnNi.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14120', '14121', '14122', '14123', '14124', '14125', '14126', '14127', '14128']
+数据已保存到 outputs/output_20250602092849_14120.json
+./inputs/CuSn.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14434', '14435', '14436', '14437', '14438', '14439', '14440', '14441', '14442']
+数据已保存到 outputs/output_20250604172708_14434.json
+./inputs/CuSn.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14443', '14444', '14445', '14446', '14447', '14448', '14449', '14450', '14451']
+数据已保存到 outputs/output_20250604173128_14443.json
+./inputs/Fe.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_gpu.yaml
+['14474', '14475', '14476', '14477', '14478', '14479', '14480', '14481', '14482']
+数据已保存到 outputs/output_20250605120452_14474.json
+./inputs/Fe.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_gpu.yaml
+['14483', '14484', '14485', '14486', '14487', '14488', '14489', '14490', '14491']
+数据已保存到 outputs/output_20250605120525_14483.json
+./inputs/Co.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14573', '14574', '14575', '14576', '14577', '14578', '14579', '14580', '14581']
+数据已保存到 outputs/output_20250606085335_14573.json
+./inputs/Co.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14591', '14592', '14593', '14594', '14595', '14596', '14597', '14598', '14599']
+数据已保存到 outputs/output_20250606090122_14591.json
+./inputs/Co.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14619', '14620', '14621', '14622', '14623', '14624', '14625', '14626', '14627']
+数据已保存到 outputs/output_20250606091216_14619.json
+./inputs/Ni.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14699', '14700', '14701', '14702', '14703', '14704', '14705', '14706', '14707']
+数据已保存到 outputs/output_20250607085623_14699.json
+./inputs/Ni.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['14708', '14709', '14710', '14711', '14712', '14713', '14714', '14715', '14716']
+数据已保存到 outputs/output_20250607085733_14708.json
+./inputs/Zn.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_gpu.yaml
+['14717', '14718', '14719', '14720', '14721', '14722', '14723', '14724', '14725']
+数据已保存到 outputs/output_20250607111015_14717.json
+./inputs/Zn.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_gpu.yaml
+['14726', '14727', '14728', '14729', '14730', '14731', '14732', '14733', '14734']
+数据已保存到 outputs/output_20250607111044_14726.json
+./inputs/CuO.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['14993', '14994', '14995', '14996', '14997', '14998', '14999', '15000', '15001']
+数据已保存到 outputs/output_20250609233633_14993.json
+./inputs/CuO.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['15002', '15003', '15004', '15005', '15006', '15007', '15008', '15009', '15010']
+数据已保存到 outputs/output_20250609234417_15002.json
+./inputs/CuO.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['15011', '15012', '15013', '15014', '15015', '15016', '15017', '15018', '15019']
+数据已保存到 outputs/output_20250609234510_15011.json
+./inputs/CuO.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_sc.yaml
+['15020', '15021', '15022', '15023', '15024', '15025', '15026', '15027', '15028']
+数据已保存到 outputs/output_20250609234550_15020.json
+./inputs/Ag.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['15065', '15066', '15067', '15068', '15069', '15070', '15071', '15072', '15073']
+数据已保存到 outputs/output_20250612093129_15065.json
+./inputs/Ag.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['15074', '15075', '15076', '15077', '15078', '15079', '15080', '15081', '15082']
+数据已保存到 outputs/output_20250612093200_15074.json
+./inputs/Au.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['15083', '15084', '15085', '15086', '15087', '15088', '15089', '15090', '15091']
+数据已保存到 outputs/output_20250612093236_15083.json
+./inputs/Au.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['15092', '15093', '15094', '15095', '15096', '15097', '15098', '15099', '15100']
+数据已保存到 outputs/output_20250612093257_15092.json
+./inputs/NiO.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['16508', '16509', '16510', '16511', '16512', '16513', '16514', '16515', '16516']
+数据已保存到 outputs/output_20250616223339_16508.json
+./inputs/NiO.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_cm.yaml
+['16526', '16527', '16528', '16529', '16530', '16531', '16532', '16533', '16534']
+数据已保存到 outputs/output_20250617115503_16526.json
+./inputs/NiO.cif ./inputs/Na2S4.cif
+提交错误: No module named 'yaml_generator_brl_hfe'
+提交工作流时出错: No module named 'yaml_generator_brl_hfe'
+./inputs/NiO.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16544', '16545', '16546', '16547', '16548', '16549', '16550', '16551', '16552']
+数据已保存到 outputs/output_20250617150633_16544.json
+./inputs/NiO.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16562', '16563', '16564', '16565', '16566', '16567', '16568', '16569', '16570']
+数据已保存到 outputs/output_20250617210945_16562.json
+./inputs/Co3O4.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16571', '16572', '16573', '16574', '16575', '16576', '16577', '16578', '16579']
+数据已保存到 outputs/output_20250617211542_16571.json
+./inputs/Co3O4.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16634', '16635', '16636', '16637', '16638', '16639', '16640', '16641', '16642']
+数据已保存到 outputs/output_20250617232506_16634.json
+./inputs/FeO.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16688', '16689', '16690', '16691', '16692', '16693', '16694', '16695', '16696']
+数据已保存到 outputs/output_20250618151159_16688.json
+./inputs/FeO.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16697', '16698', '16699', '16700', '16701', '16702', '16703', '16704', '16705']
+数据已保存到 outputs/output_20250618151255_16697.json
+./inputs/FeO.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16706', '16707', '16708', '16709', '16710', '16711', '16712', '16713', '16714']
+数据已保存到 outputs/output_20250618151357_16706.json
+./inputs/FeO.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16715', '16716', '16717', '16718', '16719', '16720', '16721', '16722', '16723']
+数据已保存到 outputs/output_20250618151421_16715.json
+./inputs/Co1O1_ICSD_624575.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16760', '16761', '16762', '16763', '16764', '16765', '16766', '16767', '16768']
+数据已保存到 outputs/output_20250618152656_16760.json
+./inputs/Co1O1_ICSD_624575.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16769', '16770', '16771', '16772', '16773', '16774', '16775', '16776', '16777']
+数据已保存到 outputs/output_20250618152712_16769.json
+./inputs/Mn1O1_ICSD_657304.cif ./inputs/Na2S.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['16778', '16779', '16780', '16781', '16782', '16783', '16784', '16785', '16786']
+数据已保存到 outputs/output_20250618175645_16778.json
+./inputs/Mn1O1_ICSD_657304.cif ./inputs/Na2S2.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['16787', '16788', '16789', '16790', '16791', '16792', '16793', '16794', '16795']
+数据已保存到 outputs/output_20250618175721_16787.json
+./inputs/Mn1O1_ICSD_657304.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['16862', '16863', '16864', '16865', '16866', '16867', '16868', '16869', '16870']
+数据已保存到 outputs/output_20250619083347_16862.json
+./inputs/Mn1O1_ICSD_657304.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['16871', '16872', '16873', '16874', '16875', '16876', '16877', '16878', '16879']
+数据已保存到 outputs/output_20250619083553_16871.json
+./inputs/Co1O1_ICSD_624575.cif ./inputs/Na2S4.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_brl.yaml
+['16928', '16929', '16930', '16931', '16932', '16933', '16934', '16935', '16936']
+数据已保存到 outputs/output_20250619204403_16928.json
+./inputs/Co1O1_ICSD_624575.cif ./inputs/Na2S8.cif
+YAML 文件已成功保存到 /Users/jzz/.jfremote/wf_brl_hfe.yaml
+['16946', '16947', '16948', '16949', '16950', '16951', '16952', '16953', '16954']
+数据已保存到 outputs/output_20250619224042_16946.json

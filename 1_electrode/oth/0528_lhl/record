@@ -1,0 +1,4 @@
+读取配置文件时出错: while scanning a simple key
+  in "inputs/config.yaml", line 22, column 3
+could not find expected ':'
+  in "inputs/config.yaml", line 23, column 3

@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    d912d430-ae1c-4ec3-a4ef-433a547615ee(static) -->|dir_name, structure| 1c3125d3-3800-4f17-a87a-0157e547c43f(non-scf uniform)\n    d912d430-ae1c-4ec3-a4ef-433a547615ee(static) -->|dir_name, structure| 7e54c47b-f6d3-4b56-bcb7-55d7dff8bee2(non-scf line)\n    d912d430-ae1c-4ec3-a4ef-433a547615ee(static)\n    1c3125d3-3800-4f17-a87a-0157e547c43f(non-scf uniform)\n    7e54c47b-f6d3-4b56-bcb7-55d7dff8bee2(non-scf line)",
+    "project": "wf_ai_gpu",
+    "flow_identifier": "bands",
+    "response": "['17026', '17027', '17028']"
+}

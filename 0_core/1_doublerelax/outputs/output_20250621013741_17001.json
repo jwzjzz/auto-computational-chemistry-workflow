@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    948911d7-9953-4c35-ab3b-165cc28d37eb(relax 1) -->|structure, dir_name| 767d8b17-84d7-47c8-ba1e-1452611eb136(relax 2)\n    948911d7-9953-4c35-ab3b-165cc28d37eb(relax 1)\n    767d8b17-84d7-47c8-ba1e-1452611eb136(relax 2)",
+    "project": "wf_dr_gpu",
+    "flow_identifier": "wf_instance_zn_pe",
+    "response": "['17001', '17002']"
+}

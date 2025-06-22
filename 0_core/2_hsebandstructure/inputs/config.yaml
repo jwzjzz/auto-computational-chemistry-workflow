@@ -1,0 +1,32 @@
+# 项目基础信息
+project: "wf_ai_gpu"
+worker_n: "gpu"
+input_data: "./inputs/Si_mp-149_computed.cif"  # 结构输入路径/材料ID
+flow_identifier: "bands"
+
+# Maker 实例化参数（包括子 Maker）
+maker:
+  class: "HSEBandStructureMaker"  # Maker 类型
+  relax_maker: {}  # RelaxMaker 无额外参数，使用默认初始化
+  static_maker:    # StaticMaker 专属参数
+    task_document_kwargs: 
+      store_volumetric_data: []  # 传递给 StaticMaker 的初始化参数
+
+# 工作流构建参数（包括 INCAR 参数和 Maker 专属参数）
+#base_incar: {}  # 基础 INCAR 参数（可选，默认值由代码提供）
+base_incar: 
+  ENCUT: 520
+  PREC: Normal
+  EDIFF: 1e-5
+  EDIFFG: -0.05
+  #GGA: Rp
+  #ISPIN: 2
+  #ISIF: 2
+  #ISMEAR: 0
+parr_incar:     # 并行 INCAR 参数
+  KPAR: 4
+  NCORE: 16
+maker_kwargs:    # 传递给 ElectrodeInsertionMaker.make() 的专属参数
+  inserted_element: "Zn"
+  n_steps: 1
+  insertions_per_step: 1

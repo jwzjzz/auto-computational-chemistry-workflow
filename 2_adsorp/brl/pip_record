@@ -1,0 +1,492 @@
+pip install aiidalab-qe -i https://pypi.tuna.tsinghua.edu.cn/simple
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting aiidalab-qe
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ca/42/9ee2bd389a575961c889ab1eee4b8dd904dae2cb76245ceef57a61b22e6a/aiidalab_qe-25.3.0-py3-none-any.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 8.4 MB/s eta 0:00:00
+Collecting aiida-core<3,~=2.5 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ae/38/ebb5fe043f52a056645b3c210ec6250661ee4765185301b71010eb6b04a0/aiida_core-2.6.4-py3-none-any.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 7.7 MB/s eta 0:00:00
+Requirement already satisfied: Jinja2~=3.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab-qe) (3.1.6)
+Collecting aiida-quantumespresso~=4.9 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/77/ce/9984e877d0ca505aa4a287185c11bdc36d156beba73fb245df08d6802c2e/aiida_quantumespresso-4.10.0-py3-none-any.whl (829 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 829.7/829.7 kB 2.2 MB/s eta 0:00:00
+Collecting aiidalab-widgets-base~=2.4.0 (from aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c3/a5/0e62a968cb8a13f50d51e8aa45b49b3595d20ed7d609c58b99bc1451358a/aiidalab_widgets_base-2.4.0-py3-none-any.whl (87 kB)
+Collecting aiida-pseudo~=1.4 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4a/31/f3833f3708d1c747e511c0d96b1288ec669d8c21ea6ff8c6568694dfc2e2/aiida_pseudo-1.7.1-py3-none-any.whl (48 kB)
+Collecting filelock~=3.8 (from aiidalab-qe)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/4d/36/2a115987e2d8c300a974597416d9de88f2444426de9571f4b59b2cca3acc/filelock-3.18.0-py3-none-any.whl (16 kB)
+Collecting importlib-resources~=5.2 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7a/68/bd9dd6bbf06772c7accce77d0354d783333fbe712a60b08fc13540c05422/importlib_resources-5.13.0-py3-none-any.whl (32 kB)
+Collecting aiida-wannier90-workflows==2.3.0 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/13/ba/21f01006a9fa0a2918cd4fda7f3e1dfd30b57cd824fcd58628e2630bebcc/aiida_wannier90_workflows-2.3.0-py3-none-any.whl (173 kB)
+Collecting anywidget==0.9.13 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1a/5a/7b024920cca385eb9b56bc63edf0a647de208346bfac5b339b544733d53a/anywidget-0.9.13-py3-none-any.whl (213 kB)
+Collecting table_widget~=0.0.2 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/aa/9a/f157eb0061e370377042f73b8e18dc9ca29eb1c7d2ffd6118c62e4c99093/table_widget-0.0.3-py2.py3-none-any.whl (252 kB)
+Collecting shakenbreak~=3.3.1 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/17/41/0c268e0b26653c79d23adc40f66524794c4ab4afb46207a7a35a1a03d7c1/shakenbreak-3.3.6-py3-none-any.whl (199 kB)
+Collecting plotly~=5.24 (from aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e5/ae/580600f441f6fc05218bd6c9d5794f4aef072a7d9093b291f1c50a9db8bc/plotly-5.24.1-py3-none-any.whl (19.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.1/19.1 MB 11.5 MB/s eta 0:00:00
+Collecting aiida-wannier90>=2.2 (from aiida-wannier90-workflows==2.3.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3e/84/5be07fe43040400442e4698a938a11d576411514cc788a67ce4a899a015b/aiida_wannier90-2.2.0-py3-none-any.whl (41 kB)
+Requirement already satisfied: click>=8.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-wannier90-workflows==2.3.0->aiidalab-qe) (8.1.7)
+Collecting colorama (from aiida-wannier90-workflows==2.3.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Requirement already satisfied: ipywidgets>=7.6.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from anywidget==0.9.13->aiidalab-qe) (8.1.7)
+Collecting psygnal>=0.8.1 (from anywidget==0.9.13->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e0/1a/f17746df1ab39992c4263416fe880da528f76f776befdf7c7d9ddd51f351/psygnal-0.13.0-cp310-cp310-macosx_11_0_arm64.whl (473 kB)
+Requirement already satisfied: typing-extensions>=4.2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from anywidget==0.9.13->aiidalab-qe) (4.12.2)
+Collecting alembic~=1.2 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/dd/e2/88e425adac5ad887a087c38d04fe2030010572a3e0e627f8a6e8c33eeda8/alembic-1.16.2-py3-none-any.whl (242 kB)
+Collecting archive-path~=0.4.2 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/75/ff/0c802d4d776db24570b309bfae4d15e3c3246c78b96bcc87893fe6979de9/archive_path-0.4.2-py3-none-any.whl (18 kB)
+Collecting aio-pika~=6.6 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/30/ec/f0e729e71812d6806a7c7b65dba9e46a6a86a8c079fdf537aca9050c7b95/aio_pika-6.8.2-py3-none-any.whl (42 kB)
+Collecting circus~=0.18.0 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7b/fd/254a8a04ae1b57af59917bcd2670b31d42ce0da94d0aa257c80096c9089e/circus-0.18.0-py3-none-any.whl (200 kB)
+Collecting click-spinner~=0.1.8 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/93/2a/04893832bfeddc2d40a7de2e8153b3085f12d63507d91a9cf0157dc3a1c2/click_spinner-0.1.10-py2.py3-none-any.whl (4.0 kB)
+Collecting disk-objectstore~=1.1 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0e/d7/e1f178515454ca4ba7e437db3e19b07854bc7573c2130a2dbf3f1beb6362/disk_objectstore-1.3.0-py3-none-any.whl (70 kB)
+Collecting docstring-parser (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d5/7c/e9fcff7623954d86bdc17782036cbf715ecab1bec4847c008557affe1ca8/docstring_parser-0.16-py3-none-any.whl (36 kB)
+Collecting graphviz~=0.19 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/91/4c/e0ce1ef95d4000ebc1c11801f9b944fa5910ecc15b5e351865763d8657f8/graphviz-0.21-py3-none-any.whl (47 kB)
+Requirement already satisfied: ipython>=7 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (8.34.0)
+Collecting jedi<0.19 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6d/60/4acda63286ef6023515eb914543ba36496b8929cb7af49ecce63afde09c6/jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 10.5 MB/s eta 0:00:00
+Collecting kiwipy~=0.7.7 (from kiwipy[rmq]~=0.7.7->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/96/13/ed457ebbeb9d38a50b46910d1f425bc0e6a6b1c625496747dd344f3ad0b6/kiwipy-0.7.8-py3-none-any.whl (29 kB)
+Collecting importlib-metadata~=6.0 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/59/9b/ecce94952ab5ea74c31dcf9ccf78ccd484eebebef06019bf8cb579ab4519/importlib_metadata-6.11.0-py3-none-any.whl (23 kB)
+Requirement already satisfied: numpy~=1.21 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (1.26.4)
+Collecting paramiko<3.0.0,>=2.7.2 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/71/6d/95777fd66507106d2f8f81d005255c237187951644f85a5bd0baeec8a88f/paramiko-2.12.0-py2.py3-none-any.whl (213 kB)
+Collecting plumpy~=0.21.6 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a2/bb/87170c67b2c3601a1d9088af22ba62e2867843a65251d1004b68853af389/plumpy-0.21.11-py3-none-any.whl (74 kB)
+Collecting pgsu~=0.2.1 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/62/1c/52863dbf75f9b50ecb4ae71042eca119b11c6262f9eb288d57e9900f0077/pgsu-0.2.4.tar.gz (9.9 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting psutil~=5.6 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/05/33/2d74d588408caedd065c2497bdb5ef83ce6082db01289a1e1147f6639802/psutil-5.9.8-cp38-abi3-macosx_11_0_arm64.whl (249 kB)
+Collecting psycopg2-binary~=2.8 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e7/9a/7f4f2f031010bbfe6a02b4a15c01e12eb6b9b7b358ab33229f28baadbfc1/psycopg2_binary-2.9.10-cp310-cp310-macosx_14_0_arm64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 11.1 MB/s eta 0:00:00
+Requirement already satisfied: pydantic~=2.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (2.9.2)
+Collecting pytz~=2021.1 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d3/e3/d9f046b5d1c94a3aeab15f1f867aa414f8ee9d196fae6865f1d6a0ee1a0b/pytz-2021.3-py2.py3-none-any.whl (503 kB)
+Requirement already satisfied: pyyaml~=6.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (6.0.2)
+Requirement already satisfied: requests~=2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (2.32.3)
+Collecting sqlalchemy~=2.0 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6f/b8/cb90f23157e28946b27eb01ef401af80a1fab7553762e87df51507eaed61/sqlalchemy-2.0.41-cp310-cp310-macosx_11_0_arm64.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.0 MB/s eta 0:00:00
+Requirement already satisfied: tabulate<0.10.0,>=0.8.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (0.9.0)
+Requirement already satisfied: tqdm~=4.45 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (4.67.1)
+Collecting upf_to_json~=0.9.2 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/df/c3/e955711782ddd27410bd220e567fcafb0aeb816f9d1e3a04136f8cea09ff/upf_to_json-0.9.5-py3-none-any.whl (12 kB)
+Requirement already satisfied: wrapt~=1.11 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-core<3,~=2.5->aiidalab-qe) (1.17.2)
+Collecting pint<0.25.0,>=0.23.0 (from aiida-pseudo~=1.4->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b7/16/bd2f5904557265882108dc2e04f18abc05ab0c2b7082ae9430091daf1d5c/Pint-0.24.4-py3-none-any.whl (302 kB)
+Requirement already satisfied: jsonschema in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-quantumespresso~=4.9->aiidalab-qe) (4.23.0)
+Requirement already satisfied: packaging in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiida-quantumespresso~=4.9->aiidalab-qe) (24.2)
+Collecting qe-tools~=2.0 (from aiida-quantumespresso~=4.9->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c9/75/3e9f01ad4e7e4ba4e58649efb5c7ef9418415dc81c9b140cc9ad019633eb/qe_tools-2.3.0-py3-none-any.whl (24 kB)
+Collecting xmlschema~=2.0 (from aiida-quantumespresso~=4.9->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5e/2a/c2bc97fd20efe65cfcfc21666d1b0213969133d37ea093761d264d9ed9f8/xmlschema-2.5.1-py3-none-any.whl (395 kB)
+Collecting PyCifRW~=4.4 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/57/08/e0811d3a6bd0895fef98a0341ba2bd4556c8bbc7287ea01f1a8db96214f6/PyCifRW-4.4.6.tar.gz (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 10.0 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting aiidalab>=21.11.2 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d9/e8/55a36f93ec6d2b8eec9ee15e3d2646db0e6e99cca8c2ada7da0568cc5961/aiidalab-24.9.0-py3-none-any.whl (310 kB)
+Collecting ansi2html~=1.6 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/bd/71/aee71b836e9ee2741d5694b80d74bfc7c8cd5dbdf7a9f3035fcf80d792b1/ansi2html-1.9.2-py3-none-any.whl (17 kB)
+Requirement already satisfied: ase~=3.18 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (3.23.0)
+Collecting bokeh~=2.0 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/15/06/706a9c43436cd0c3e2f4b94e93ae837e74965e59565c596b727974a74169/bokeh-2.4.3-py3-none-any.whl (18.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.5/18.5 MB 11.4 MB/s eta 0:00:00
+Collecting humanfriendly~=10.0 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f0/0f/310fb31e39e2d734ccaa2c0fb981ee41f7bd5056ce9bc29b2248bd569169/humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+Collecting ipytree~=0.2 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e4/03/35cf1742598d784e96153175233318a2332f71863e55ad1007c9264c1a7a/ipytree-0.2.2-py2.py3-none-any.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 10.9 MB/s eta 0:00:00
+Requirement already satisfied: traitlets~=5.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (5.14.3)
+Collecting ipywidgets>=7.6.0 (from anywidget==0.9.13->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/25/22/f48bd3af0ef7c72dce13f9930a4483acbc7c77373834700296495ea0875f/ipywidgets-7.8.5-py2.py3-none-any.whl (124 kB)
+Collecting widgetsnbextension<3.6.3 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/69/3f/4fec898c106ecf3c0b8dc474ddf754f58dd87cb8eaa59aeb2c2876508b1b/widgetsnbextension-3.6.2-py2.py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 10.7 MB/s eta 0:00:00
+Collecting pymysql~=0.9 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1a/ea/dd9c81e2d85efd03cfbf808736dd055bd9ea1a78aea9968888b1055c3263/PyMySQL-0.10.1-py2.py3-none-any.whl (47 kB)
+Requirement already satisfied: nglview~=3.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (3.1.4)
+Requirement already satisfied: spglib<3,>=1.14 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.6.0)
+Collecting vapory~=0.1.2 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3a/c3/47335d0cbd3b9eeff8383aa7f634bb2191587a2763756a92c255d854cdff/Vapory-0.1.2-py3-none-any.whl (15 kB)
+Requirement already satisfied: pandas~=2.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.2.3)
+Collecting ipyoptimade~=0.1 (from aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8a/2b/0ffe9eeb66e3110f8c534debd629b89b3ab8967a5c6cf2c19a044e7635de/ipyoptimade-0.2.0-py3-none-any.whl (178 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from Jinja2~=3.0->aiidalab-qe) (3.0.2)
+Collecting tenacity>=6.2.0 (from plotly~=5.24->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e5/30/643397144bfbfec6f6ef821f36f33e57d35946c44a2352d3c9f0ae847619/tenacity-9.1.2-py3-none-any.whl (28 kB)
+Requirement already satisfied: pymatgen>=2022.10.22 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from shakenbreak~=3.3.1->aiidalab-qe) (2024.11.13)
+Requirement already satisfied: pymatgen-analysis-defects>=2022.10.28 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from shakenbreak~=3.3.1->aiidalab-qe) (2024.10.22)
+Requirement already satisfied: matplotlib>=3.6 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from shakenbreak~=3.3.1->aiidalab-qe) (3.10.1)
+Requirement already satisfied: seaborn in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from shakenbreak~=3.3.1->aiidalab-qe) (0.13.2)
+Collecting hiphive>=1.0 (from shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6f/a1/db627f0dea49ce8ae34692f3852c5d13c6b6b1583876681ef87a0bf95a50/hiphive-1.4.tar.gz (357 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: monty in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from shakenbreak~=3.3.1->aiidalab-qe) (2024.10.21)
+Collecting doped>=2.4.4 (from shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/c0/f695c089a792642a2f749021e5c2ce6b09f79635a917ec9d73999c0f1c45/doped-3.1.0-py3-none-any.whl (386 kB)
+Collecting pymysql~=0.9 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ed/39/15045ae46f2a123019aa968dfcba0396c161c20f855f11dea6796bcaae95/PyMySQL-0.9.3-py2.py3-none-any.whl (47 kB)
+Collecting seekpath>=1.9.3,~=1.9 (from aiida_core[atomic-tools]~=2.3->aiida-quantumespresso~=4.9->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/df/00/4b7808aa02e407a5ff59e913b2dd4b36c9f215e2a41b00c09a464c72f54e/seekpath-1.9.7-py2.py3-none-any.whl (86 kB)
+Collecting cachetools~=4.1 (from aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ea/c1/4740af52db75e6dbdd57fc7e9478439815bbac549c1c05881be27d19a17d/cachetools-4.2.4-py3-none-any.whl (10 kB)
+Collecting dulwich~=0.20 (from aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/de/4d/0bfc8a96456d033428875003b5104da2c32407363b5b829da5e27553b403/dulwich-0.22.8-cp310-cp310-macosx_11_0_arm64.whl (925 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 925.1/925.1 kB 9.4 MB/s eta 0:00:00
+Requirement already satisfied: pip in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (25.0.1)
+Collecting requests-cache~=1.0 (from aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4e/2e/8f4051119f460cfc786aa91f212165bb6e643283b533db572d7b33952bd2/requests_cache-1.2.1-py3-none-any.whl (61 kB)
+Requirement already satisfied: setuptools in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (75.8.2)
+Collecting toml~=0.10 (from aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting watchdog~=4.0 (from aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6f/cd/2e306756364a934532ff8388d90eb2dc8bb21fe575cd2b33d791ce05a02f/watchdog-4.0.2-cp310-cp310-macosx_11_0_arm64.whl (92 kB)
+Collecting aiormq<4,>=3.2.3 (from aio-pika~=6.6->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0b/c4/dc5b9d50c15af2ee187974a5a0c3f20c06cce6559eea4c065d372e846b6a/aiormq-3.3.1-py3-none-any.whl (28 kB)
+Collecting yarl (from aio-pika~=6.6->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f7/de/30d98f03e95d30c7e3cc093759982d038c8833ec2451001d45ef4854edc1/yarl-1.20.1-cp310-cp310-macosx_11_0_arm64.whl (89 kB)
+Collecting Mako (from alembic~=1.2->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/87/fb/99f81ac72ae23375f22b7afdb7642aba97c00a713c217124420147681a2f/mako-1.3.10-py3-none-any.whl (78 kB)
+Requirement already satisfied: tomli in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from alembic~=1.2->aiida-core<3,~=2.5->aiidalab-qe) (2.2.1)
+Requirement already satisfied: scipy>=1.6.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ase~=3.18->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.15.2)
+Requirement already satisfied: pillow>=7.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from bokeh~=2.0->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (11.1.0)
+Requirement already satisfied: tornado>=5.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from bokeh~=2.0->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (6.4.2)
+Requirement already satisfied: pyzmq>=17.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from circus~=0.18.0->aiida-core<3,~=2.5->aiidalab-qe) (26.3.0)
+Collecting pymatgen>=2022.10.22 (from shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ed/d0/63dd2b9b04cf4538d3249272abec16fca2258c149c58461530afd8752d52/pymatgen-2025.6.14-cp310-cp310-macosx_11_0_arm64.whl (3.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 10.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of doped to determine which version is compatible with other requirements. This could take a while.
+Collecting doped>=2.4.4 (from shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/52/c2/2c26bd7c4af0aa71e69da488c1087735fac00d6dd25a2a02b631df528e44/doped-3.0.0-py3-none-any.whl (358 kB)
+Collecting pydefect>=0.8.1 (from doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7d/f3/74b95382af1956de4b35c94e229cb8a572dea9f5a62ac1e16618320d1c82/pydefect-0.9.7-py3-none-any.whl (198 kB)
+Collecting vise>=0.9.0 (from doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/28/b7/cf608f50182d0dedea435da0ae493436e0f6f600d0cec48901549ba0253f/vise-0.9.5-py3-none-any.whl (157 kB)
+Collecting easyunfold>=0.3.6 (from doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/cd/2a/2bd55425b07fb5c6382af0f4adb5ad4bc62beb1fb18e4a180c6bb8bcc0a2/easyunfold-0.3.10-py3-none-any.whl (57 kB)
+Collecting cmcrameri>=1.4 (from doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f9/a2/4c88f17ee50af5093978c4d989936883f959d7d81e1e2fa093863b080c1c/cmcrameri-1.9-py3-none-any.whl (277 kB)
+Collecting matplotlib-label-lines (from doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5a/cc/2b220f036033a1ededd36273438a3497382e82078ea092c1a73577322bc5/matplotlib_label_lines-0.8.1-py3-none-any.whl (826 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 826.2/826.2 kB 9.0 MB/s eta 0:00:00
+Requirement already satisfied: dscribe in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (2.1.1)
+Requirement already satisfied: h5py in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe) (3.13.0)
+Requirement already satisfied: numba>=0.55 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe) (0.61.0)
+Requirement already satisfied: scikit-learn in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe) (1.6.1)
+Requirement already satisfied: sympy>=1.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe) (1.13.3)
+Collecting trainstation>=0.2 (from hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/42/ae/67e41f4ad424f01760ffd1469c90f7b088541aefa149a54e0eb9b71e83af/trainstation-1.1-py2.py3-none-any.whl (26 kB)
+Requirement already satisfied: zipp>=0.5 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from importlib-metadata~=6.0->aiida-core<3,~=2.5->aiidalab-qe) (3.21.0)
+Collecting appdirs~=1.4.4 (from ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3b/00/2344469e2084fb287c2e0b57b72910309874c3245463acd6cf5e3db69324/appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting cachecontrol~=0.13.1 (from cachecontrol[filecache]~=0.13.1->ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1d/e3/a22348e6226dcd585d5a4b5f0175b3a16dabfd3912cbeb02f321d00e56c7/cachecontrol-0.13.1-py3-none-any.whl (22 kB)
+Collecting ipywidgets-extended!=1.2.0,!=1.2.1,<2,>=1.1.1 (from ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fb/f3/34d1f32b3cbed8a5d5227b17aea50898b13f48f260b1d1a25e75795a336b/ipywidgets_extended-1.1.1-py2.py3-none-any.whl (30 kB)
+Collecting optimade~=1.0.0 (from ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9a/30/eb717b78303bc95341809439dfcd72ec5453d32621137ccf6dc8de265a6f/optimade-1.0.6-py3-none-any.whl (230 kB)
+Collecting widget_periodictable~=3.1 (from ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4b/8c/0fd899daa31d377ce262b7c53f602bbadee89bf4530a9570e526d673ec2b/widget_periodictable-3.1.1-py3-none-any.whl (576 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 576.6/576.6 kB 9.1 MB/s eta 0:00:00
+Collecting semver~=3.0 (from ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a6/24/4d91e05817e92e3a61c8a21e08fd0f390f5301f1c448b137c57c4bc6e543/semver-3.0.4-py3-none-any.whl (17 kB)
+Requirement already satisfied: decorator in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (5.2.1)
+Requirement already satisfied: exceptiongroup in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (1.2.2)
+Requirement already satisfied: matplotlib-inline in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (0.1.7)
+Requirement already satisfied: pexpect>4.3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (4.9.0)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (3.0.50)
+Requirement already satisfied: pygments>=2.4.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (2.19.1)
+Requirement already satisfied: stack_data in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (0.6.3)
+Requirement already satisfied: comm>=0.1.3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipywidgets>=7.6.0->anywidget==0.9.13->aiidalab-qe) (0.2.2)
+Requirement already satisfied: ipython-genutils~=0.2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipywidgets>=7.6.0->anywidget==0.9.13->aiidalab-qe) (0.2.0)
+INFO: pip is looking at multiple versions of ipywidgets to determine which version is compatible with other requirements. This could take a while.
+Collecting ipywidgets>=7.6.0 (from anywidget==0.9.13->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/70/30/32eede798696011383fe854682ae4b1229df6e696df751a6510669774856/ipywidgets-7.8.4-py2.py3-none-any.whl (124 kB)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4e/ca/5cdfcae82d93d645b6a833c902a0641f39278ac798912a54327bbb999ff4/ipywidgets-7.8.3-py2.py3-none-any.whl (124 kB)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/59/e8/a4e5ba5ca8f4e5d49b3f90bb3c0705842b27f94b58491b1d1529e6071415/ipywidgets-7.8.2-py2.py3-none-any.whl (124 kB)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/14/3f/fa7fcf85061819f5a10ed09eaef38fe97d0f3f91d14674bbb26c3fc2a622/ipywidgets-7.8.1-py2.py3-none-any.whl (124 kB)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/dc/0f/efa0531c38e7651d7b229e4746ed83ddd286d0ad80a316b175a4b14e8c1c/ipywidgets-7.8.0-py2.py3-none-any.whl (124 kB)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/34/65/e97c8528ce10091a7467fe82ade2d101270a233b9fb7324012ed0ebd0586/ipywidgets-7.7.5-py2.py3-none-any.whl (123 kB)
+Requirement already satisfied: ipykernel>=4.5.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipywidgets>=7.6.0->anywidget==0.9.13->aiidalab-qe) (6.29.5)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/32/d2/fdef71ee265d3776f234264c57107bf0be54551319b22bcff9c66745532c/ipywidgets-7.7.4-py2.py3-none-any.whl (123 kB)
+Collecting jupyterlab-widgets<3,>=1.0.0 (from ipywidgets>=7.6.0->anywidget==0.9.13->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1f/73/4f281e0f86bf532baec742da40ededf8b22dc224523e38c638fb6ad91255/jupyterlab_widgets-1.1.11-py3-none-any.whl (246 kB)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jedi<0.19->aiida-core<3,~=2.5->aiidalab-qe) (0.8.4)
+Collecting shortuuid (from kiwipy~=0.7.7->kiwipy[rmq]~=0.7.7->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c0/44/21d6bf170bf40b41396480d8d49ad640bca3f2b02139cd52aa1e272830a5/shortuuid-1.0.13-py3-none-any.whl (10 kB)
+Collecting async-generator (from kiwipy~=0.7.7->kiwipy[rmq]~=0.7.7->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/71/52/39d20e03abd0ac9159c162ec24b93fbcaa111e8400308f2465432495ca2b/async_generator-1.10-py3-none-any.whl (18 kB)
+Collecting pytray<0.4.0,>=0.2.2 (from kiwipy~=0.7.7->kiwipy[rmq]~=0.7.7->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4b/1e/fdce85e621881efbef407338a54fc712507b72c3a5cd0efc3da65be44cd3/pytray-0.3.4-py2.py3-none-any.whl (11 kB)
+Collecting deprecation (from kiwipy~=0.7.7->kiwipy[rmq]~=0.7.7->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/02/c3/253a89ee03fc9b9682f1541728eb66db7db22148cd94f89ab22528cd1e1b/deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
+Collecting aio-pika~=6.6 (from aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/33/ae/a3674289608d7e5a67529bab3691ad7d76060ecc5ea2725ae18826123421/aio_pika-6.8.1-py3-none-any.whl (42 kB)
+Collecting pamqp~=2.0 (from kiwipy[rmq]~=0.7.7->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/eb/56/afa06143361e640c9159d828dadc95fc9195c52c95b4a97d136617b0166d/pamqp-2.3.0-py2.py3-none-any.whl (28 kB)
+Requirement already satisfied: contourpy>=1.0.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from matplotlib>=3.6->shakenbreak~=3.3.1->aiidalab-qe) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from matplotlib>=3.6->shakenbreak~=3.3.1->aiidalab-qe) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from matplotlib>=3.6->shakenbreak~=3.3.1->aiidalab-qe) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from matplotlib>=3.6->shakenbreak~=3.3.1->aiidalab-qe) (1.4.8)
+Requirement already satisfied: pyparsing>=2.3.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from matplotlib>=3.6->shakenbreak~=3.3.1->aiidalab-qe) (3.2.1)
+Requirement already satisfied: python-dateutil>=2.7 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from matplotlib>=3.6->shakenbreak~=3.3.1->aiidalab-qe) (2.9.0.post0)
+INFO: pip is looking at multiple versions of nglview to determine which version is compatible with other requirements. This could take a while.
+Collecting nglview~=3.0 (from aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/db/6e/f26f3350b49c1d813106a497e3e9089cc2b62e845f67d95bf82ed27d0539/nglview-3.1.2.tar.gz (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 11.4 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/26/e2/ff4cc7f42e23b622b90c4e6de1724035846a3bf50584c5f5839e7f0792f9/nglview-3.1.1.tar.gz (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 11.2 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/04/4a/6174e29ec45ec4b3fc77a09ab39868dde363d851de54ca689ce018a57493/nglview-3.1.0.tar.gz (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 11.2 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6a/3e/40ee8822c10bf8b00d037ede875ac2a1a26b07fae5e26fbd8af3404257e3/nglview-3.0.8.tar.gz (6.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 10.3 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: tzdata>=2022.7 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pandas~=2.1->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2025.1)
+Requirement already satisfied: bcrypt>=3.1.3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from paramiko<3.0.0,>=2.7.2->aiida-core<3,~=2.5->aiidalab-qe) (4.3.0)
+Requirement already satisfied: cryptography>=2.5 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from paramiko<3.0.0,>=2.7.2->aiida-core<3,~=2.5->aiidalab-qe) (44.0.2)
+Requirement already satisfied: pynacl>=1.0.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from paramiko<3.0.0,>=2.7.2->aiida-core<3,~=2.5->aiidalab-qe) (1.5.0)
+Requirement already satisfied: six in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from paramiko<3.0.0,>=2.7.2->aiida-core<3,~=2.5->aiidalab-qe) (1.17.0)
+Requirement already satisfied: platformdirs>=2.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pint<0.25.0,>=0.23.0->aiida-pseudo~=1.4->aiidalab-qe) (4.3.6)
+Collecting flexcache>=0.3 (from pint<0.25.0,>=0.23.0->aiida-pseudo~=1.4->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/27/cd/c883e1a7c447479d6e13985565080e3fea88ab5a107c21684c813dba1875/flexcache-0.3-py3-none-any.whl (13 kB)
+Collecting flexparser>=0.4 (from pint<0.25.0,>=0.23.0->aiida-pseudo~=1.4->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fe/5e/3be305568fe5f34448807976dc82fc151d76c3e0e03958f34770286278c1/flexparser-0.4-py3-none-any.whl (27 kB)
+Requirement already satisfied: nest_asyncio~=1.5 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from plumpy~=0.21.6->aiida-core<3,~=2.5->aiidalab-qe) (1.6.0)
+Collecting ply (from PyCifRW~=4.4->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl (49 kB)
+Requirement already satisfied: annotated-types>=0.6.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pydantic~=2.4->aiida-core<3,~=2.5->aiidalab-qe) (0.7.0)
+Requirement already satisfied: pydantic-core==2.23.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pydantic~=2.4->aiida-core<3,~=2.5->aiidalab-qe) (2.23.4)
+Requirement already satisfied: joblib>=1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (1.4.2)
+Requirement already satisfied: networkx>=2.7 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (3.4.2)
+Requirement already satisfied: palettable>=3.3.3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (3.3.3)
+Requirement already satisfied: pybtex>=0.24.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (0.24.0)
+Requirement already satisfied: ruamel.yaml>=0.17.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (0.18.10)
+Requirement already satisfied: uncertainties>=3.1.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (3.2.2)
+Requirement already satisfied: scikit-image>=0.19.3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen-analysis-defects>=2022.10.28->shakenbreak~=3.3.1->aiidalab-qe) (0.25.2)
+Requirement already satisfied: mp-pyrho>=0.4.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pymatgen-analysis-defects>=2022.10.28->shakenbreak~=3.3.1->aiidalab-qe) (0.4.5)
+Requirement already satisfied: charset-normalizer<4,>=2 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from requests~=2.0->aiida-core<3,~=2.5->aiidalab-qe) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from requests~=2.0->aiida-core<3,~=2.5->aiidalab-qe) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from requests~=2.0->aiida-core<3,~=2.5->aiidalab-qe) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from requests~=2.0->aiida-core<3,~=2.5->aiidalab-qe) (2025.1.31)
+Requirement already satisfied: notebook>=4.4.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (7.4.2)
+Collecting elementpath<5.0.0,>=4.1.5 (from xmlschema~=2.0->aiida-quantumespresso~=4.9->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/45/95/615af832e7f507fe5ce4562b4be1bd2fec080c4ff6da88dcd0c2dbfca582/elementpath-4.8.0-py3-none-any.whl (243 kB)
+Requirement already satisfied: attrs>=22.2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema->aiida-quantumespresso~=4.9->aiidalab-qe) (25.3.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema->aiida-quantumespresso~=4.9->aiidalab-qe) (2024.10.1)
+Requirement already satisfied: referencing>=0.28.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema->aiida-quantumespresso~=4.9->aiidalab-qe) (0.36.2)
+Requirement already satisfied: rpds-py>=0.7.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema->aiida-quantumespresso~=4.9->aiidalab-qe) (0.23.1)
+WARNING: Package 'aiormq' has an invalid Requires-Python: Invalid specifier: '>3.5.*'
+Requirement already satisfied: msgpack>=0.5.2 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from cachecontrol~=0.13.1->cachecontrol[filecache]~=0.13.1->ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.1.0)
+Requirement already satisfied: cffi>=1.12 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from cryptography>=2.5->paramiko<3.0.0,>=2.7.2->aiida-core<3,~=2.5->aiidalab-qe) (1.17.1)
+Requirement already satisfied: colormath~=3.0 in /Users/jzz/.local/lib/python3.10/site-packages (from easyunfold>=0.3.6->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (3.0.0)
+Requirement already satisfied: castepxbin~=0.3.0 in /Users/jzz/.local/lib/python3.10/site-packages (from easyunfold>=0.3.6->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.3.0)
+Collecting castepinput~=0.1 (from easyunfold>=0.3.6->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a9/28/92dcd4d773e1714dacdd2fc53ce064705527ac5c1766fcac7ee941e1ff43/castepinput-0.1.10-py3-none-any.whl (9.5 kB)
+Requirement already satisfied: jupyter-server<3,>=2.4.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.15.0)
+Requirement already satisfied: jupyterlab-server<3,>=2.27.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.27.3)
+Requirement already satisfied: jupyterlab<4.5,>=4.4.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (4.4.2)
+Requirement already satisfied: notebook-shim<0.3,>=0.2 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.2.4)
+Requirement already satisfied: llvmlite<0.45,>=0.44.0dev0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from numba>=0.55->hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe) (0.44.0)
+Collecting lark~=1.1 (from optimade~=1.0.0->ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2d/00/d90b10b962b4277f5e64a78b6609968859ff86889f5b898c1a778c06ec00/lark-1.2.2-py3-none-any.whl (111 kB)
+Requirement already satisfied: pydantic-settings~=2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from optimade~=1.0.0->ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.7.0)
+Requirement already satisfied: ptyprocess>=0.5 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pexpect>4.3->ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (0.7.0)
+Requirement already satisfied: wcwidth in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (0.2.13)
+Requirement already satisfied: latexcodec>=1.0.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pybtex>=0.24.0->pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (3.0.0)
+Collecting adjustText (from pydefect>=0.8.1->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/53/1c/8feedd607cc14c5df9aef74fe3af9a99bf660743b842a9b5b1865326b4aa/adjustText-1.3.0-py3-none-any.whl (13 kB)
+Collecting cattrs>=22.2 (from requests-cache~=1.0->aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/18/b0/215274ef0d835bbc1056392a367646648b6084e39d489099959aefcca2af/cattrs-25.1.1-py3-none-any.whl (69 kB)
+Collecting url-normalize>=1.4 (from requests-cache~=1.0->aiidalab>=21.11.2->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/bc/d9/5ec15501b675f7bc07c5d16aa70d8d778b12375686b6efd47656efdc67cd/url_normalize-2.2.1-py3-none-any.whl (14 kB)
+Requirement already satisfied: ruamel.yaml.clib>=0.2.7 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ruamel.yaml>=0.17.0->pymatgen>=2022.10.22->shakenbreak~=3.3.1->aiidalab-qe) (0.2.12)
+Requirement already satisfied: imageio!=2.35.0,>=2.33 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from scikit-image>=0.19.3->pymatgen-analysis-defects>=2022.10.28->shakenbreak~=3.3.1->aiidalab-qe) (2.37.0)
+Requirement already satisfied: tifffile>=2022.8.12 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from scikit-image>=0.19.3->pymatgen-analysis-defects>=2022.10.28->shakenbreak~=3.3.1->aiidalab-qe) (2025.3.13)
+Requirement already satisfied: lazy-loader>=0.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from scikit-image>=0.19.3->pymatgen-analysis-defects>=2022.10.28->shakenbreak~=3.3.1->aiidalab-qe) (0.4)
+Collecting future>=0.15 (from seekpath>=1.9.3,~=1.9->aiida_core[atomic-tools]~=2.3->aiida-quantumespresso~=4.9->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl (491 kB)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from sympy>=1.1->hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe) (1.3.0)
+Collecting num2words (from vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d6/5b/545e9267a1cc080c8a1be2746113a063e34bcdd0f5173fd665a5c13cb234/num2words-0.5.14-py3-none-any.whl (163 kB)
+Collecting more-itertools (from vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2b/9f/7ba6f94fc1e9ac3d2b853fdff3035fb2fa5afbed898c4a72b8a020610594/more_itertools-10.7.0-py3-none-any.whl (65 kB)
+Requirement already satisfied: phonopy in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (2.30.1)
+Requirement already satisfied: mp-api in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.43.0)
+Requirement already satisfied: sparse in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from dscribe->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.15.5)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from scikit-learn->hiphive>=1.0->shakenbreak~=3.3.1->aiidalab-qe) (3.6.0)
+Requirement already satisfied: executing>=1.2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from stack_data->ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (2.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from stack_data->ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (3.0.0)
+Requirement already satisfied: pure-eval in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from stack_data->ipython>=7->aiida-core<3,~=2.5->aiidalab-qe) (0.2.3)
+Collecting multidict>=4.0 (from yarl->aio-pika~=6.6->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3b/ff/091ff4830ec8f96378578bfffa7f324a9dd16f60274cec861ae65ba10be3/multidict-6.5.0-cp310-cp310-macosx_11_0_arm64.whl (43 kB)
+Collecting propcache>=0.2.1 (from yarl->aio-pika~=6.6->aiida-core<3,~=2.5->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/63/7c/e9399ba5da7780871db4eac178e9c2e204c23dd3e7d32df202092a1ed400/propcache-0.3.2-cp310-cp310-macosx_11_0_arm64.whl (43 kB)
+Requirement already satisfied: pycparser in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from cffi>=1.12->cryptography>=2.5->paramiko<3.0.0,>=2.7.2->aiida-core<3,~=2.5->aiidalab-qe) (2.22)
+Requirement already satisfied: anyio>=3.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (4.8.0)
+Requirement already satisfied: argon2-cffi>=21.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (23.1.0)
+Requirement already satisfied: jupyter-client>=7.4.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (7.4.9)
+Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (5.7.2)
+Requirement already satisfied: jupyter-events>=0.11.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.12.0)
+Requirement already satisfied: jupyter-server-terminals>=0.4.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.5.3)
+Requirement already satisfied: nbconvert>=6.4.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (7.16.6)
+Requirement already satisfied: nbformat>=5.3.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (5.10.4)
+Requirement already satisfied: overrides>=5.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (7.7.0)
+Requirement already satisfied: prometheus-client>=0.9 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.21.1)
+Requirement already satisfied: send2trash>=1.8.2 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.8.3)
+Requirement already satisfied: terminado>=0.8.3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.18.1)
+Requirement already satisfied: websocket-client>=1.7 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.8.0)
+Requirement already satisfied: async-lru>=1.0.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyterlab<4.5,>=4.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.0.5)
+Requirement already satisfied: httpx>=0.25.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyterlab<4.5,>=4.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.28.1)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyterlab<4.5,>=4.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.2.5)
+Requirement already satisfied: babel>=2.10 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyterlab-server<3,>=2.27.1->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.17.0)
+Requirement already satisfied: json5>=0.9.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyterlab-server<3,>=2.27.1->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.10.0)
+Requirement already satisfied: python-dotenv>=0.21.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from pydantic-settings~=2.0->optimade~=1.0.0->ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.0.1)
+Collecting email-validator>=2.0.0 (from pydantic[email]~=2.2->optimade~=1.0.0->ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d7/ee/bf0adb559ad3c786f12bcbc9296b3f5675f529199bef03e2df281fa1fadb/email_validator-2.2.0-py3-none-any.whl (33 kB)
+Requirement already satisfied: maggma>=0.57.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.71.5)
+Requirement already satisfied: emmet-core>=0.78.0rc3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.84.5)
+Requirement already satisfied: smart_open in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (7.1.0)
+Collecting docopt>=0.6.2 (from num2words->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz (25 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: symfc in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from phonopy->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (1.3.4)
+Requirement already satisfied: sniffio>=1.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from anyio>=3.1.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.3.1)
+Requirement already satisfied: argon2-cffi-bindings in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (21.2.0)
+Requirement already satisfied: dnspython>=2.0.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from email-validator>=2.0.0->pydantic[email]~=2.2->optimade~=1.0.0->ipyoptimade~=0.1->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.7.0)
+Requirement already satisfied: httpcore==1.* in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from httpx>=0.25.0->jupyterlab<4.5,>=4.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from httpcore==1.*->httpx>=0.25.0->jupyterlab<4.5,>=4.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.16.0)
+Requirement already satisfied: appnope in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipykernel>=4.5.1->ipywidgets>=7.6.0->anywidget==0.9.13->aiidalab-qe) (0.1.4)
+Requirement already satisfied: debugpy>=1.6.5 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from ipykernel>=4.5.1->ipywidgets>=7.6.0->anywidget==0.9.13->aiidalab-qe) (1.8.13)
+Requirement already satisfied: entrypoints in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-client>=7.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.4)
+Requirement already satisfied: python-json-logger>=2.0.4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (3.3.0)
+Requirement already satisfied: rfc3339-validator in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.1.1)
+Requirement already satisfied: pymongo<4.11,>=4.2.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (4.10.1)
+Requirement already satisfied: mongomock>=3.10.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (4.3.0)
+Requirement already satisfied: pydash>=4.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (8.0.5)
+Requirement already satisfied: jsonlines>=4.0.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (4.0.0)
+Requirement already satisfied: aioitertools>=0.5.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.12.0)
+Requirement already satisfied: sshtunnel>=0.1.5 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.4.0)
+Requirement already satisfied: orjson>=3.9.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (3.10.15)
+Requirement already satisfied: boto3>=1.20.41 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (1.37.13)
+Requirement already satisfied: beautifulsoup4 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (4.13.3)
+Requirement already satisfied: bleach!=5.0.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (6.2.0)
+Requirement already satisfied: defusedxml in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.7.1)
+Requirement already satisfied: jupyterlab-pygments in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.3.0)
+Requirement already satisfied: mistune<4,>=2.0.3 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (3.1.2)
+Requirement already satisfied: nbclient>=0.5.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.10.2)
+Requirement already satisfied: pandocfilters>=1.4.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.5.1)
+Requirement already satisfied: fastjsonschema>=2.15 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from nbformat>=5.3.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.21.1)
+Requirement already satisfied: webencodings in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from bleach!=5.0.0->bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (0.5.1)
+Requirement already satisfied: tinycss2<1.5,>=1.1.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.4.0)
+Requirement already satisfied: botocore<1.38.0,>=1.37.13 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from boto3>=1.20.41->maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (1.37.13)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from boto3>=1.20.41->maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (1.0.1)
+Requirement already satisfied: s3transfer<0.12.0,>=0.11.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from boto3>=1.20.41->maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (0.11.4)
+Requirement already satisfied: fqdn in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.5.1)
+Requirement already satisfied: isoduration in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (20.11.0)
+Requirement already satisfied: jsonpointer>1.13 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (3.0.0)
+Requirement already satisfied: uri-template in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.3.0)
+Requirement already satisfied: webcolors>=24.6.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (24.11.1)
+Requirement already satisfied: sentinels in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from mongomock>=3.10.0->maggma>=0.57.1->mp-api->vise>=0.9.0->doped>=2.4.4->shakenbreak~=3.3.1->aiidalab-qe) (1.0.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from beautifulsoup4->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.6)
+Requirement already satisfied: arrow>=0.15.0 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (1.3.0)
+Requirement already satisfied: types-python-dateutil>=2.8.10 in /Users/jzz/miniconda3/envs/hf_mat/lib/python3.10/site-packages (from arrow>=0.15.0->isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->notebook>=4.4.1->widgetsnbextension<3.6.3->aiidalab-widgets-base~=2.4.0->aiidalab-widgets-base[optimade]~=2.4.0->aiidalab-qe) (2.9.0.20241206)
+Building wheels for collected packages: hiphive, nglview, pgsu, PyCifRW, docopt
+  Building wheel for hiphive (setup.py) ... done
+  Created wheel for hiphive: filename=hiphive-1.4-py3-none-any.whl size=88827 sha256=ed3627ac6171377c8f32162a44d044bf860ca00520a44bbaf481219db2428ee8
+  Stored in directory: /Users/jzz/Library/Caches/pip/wheels/63/7c/15/58bdf83fa278c87fd847aa76a99aa94870e1862d3ae138a88c
+  Building wheel for nglview (pyproject.toml) ... done
+  Created wheel for nglview: filename=nglview-3.0.8-py3-none-any.whl size=10216245 sha256=d96c7989fa6ba80efcf8daaf145e8edea97db2cc7bd0033f45843e9dcbc23a67
+  Stored in directory: /Users/jzz/Library/Caches/pip/wheels/3a/8c/45/e5153bad4dd26aeb4225510cee6d825e098328e43333df8b33
+  Building wheel for pgsu (pyproject.toml) ... done
+  Created wheel for pgsu: filename=pgsu-0.2.4-py3-none-any.whl size=8908 sha256=6ccfccc12b7f6d4aab1b76774c39c0ba8b26246975fd0f8cd1145a87113f6108
+  Stored in directory: /Users/jzz/Library/Caches/pip/wheels/f1/d6/0c/879813980635fbf7de4e8d6db0fdc37d3406479d4574fbd11e
+  Building wheel for PyCifRW (pyproject.toml) ... done
+  Created wheel for PyCifRW: filename=pycifrw-4.4.6-cp310-cp310-macosx_11_0_arm64.whl size=141443 sha256=027aacb4b4788baa58404cf0f3c111790c2d15fd5d449aed4ffea00d70bae88c
+  Stored in directory: /Users/jzz/Library/Caches/pip/wheels/cb/f0/9b/4e4a9ac8b0721e9c912fcddc06d8bf82ad7f9ef50e008fe44d
+  Building wheel for docopt (setup.py) ... done
+  Created wheel for docopt: filename=docopt-0.6.2-py2.py3-none-any.whl size=13749 sha256=b637681b9b62bdcbad2737bbafe0a1653ba43cdc68f36302c8a7920bd3870a6c
+  Stored in directory: /Users/jzz/Library/Caches/pip/wheels/64/c4/9e/f0871619d76c4c023953046527c4419afbaedce1f74cba7e33
+Successfully built hiphive nglview pgsu PyCifRW docopt
+Installing collected packages: vapory, upf_to_json, pytz, pymysql, ply, pamqp, docopt, click-spinner, appdirs, watchdog, url-normalize, toml, tenacity, sqlalchemy, shortuuid, semver, PyCifRW, psygnal, psycopg2-binary, psutil, propcache, num2words, multidict, more-itertools, Mako, lark, jupyterlab-widgets, jedi, importlib-resources, importlib-metadata, humanfriendly, graphviz, future, flexparser, flexcache, filelock, email-validator, elementpath, dulwich, docstring-parser, deprecation, colorama, cattrs, castepinput, cachetools, async-generator, archive-path, ansi2html, yarl, xmlschema, seekpath, requests-cache, qe-tools, pytray, plotly, pint, pgsu, disk-objectstore, circus, cachecontrol, bokeh, alembic, trainstation, paramiko, matplotlib-label-lines, kiwipy, cmcrameri, aiormq, aiidalab, adjustText, optimade, hiphive, easyunfold, aio-pika, plumpy, vise, aiida-core, pydefect, aiida-wannier90, aiida-pseudo, aiida-quantumespresso, aiida-wannier90-workflows, widgetsnbextension, ipywidgets, widget_periodictable, nglview, ipywidgets-extended, ipytree, anywidget, table_widget, ipyoptimade, aiidalab-widgets-base, doped, shakenbreak, aiidalab-qe
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2025.1
+    Uninstalling pytz-2025.1:
+      Successfully uninstalled pytz-2025.1
+  Attempting uninstall: psutil
+    Found existing installation: psutil 6.1.1
+    Uninstalling psutil-6.1.1:
+      Successfully uninstalled psutil-6.1.1
+  Attempting uninstall: jupyterlab-widgets
+    Found existing installation: jupyterlab_widgets 3.0.15
+    Uninstalling jupyterlab_widgets-3.0.15:
+      Successfully uninstalled jupyterlab_widgets-3.0.15
+  Attempting uninstall: jedi
+    Found existing installation: jedi 0.19.2
+    Uninstalling jedi-0.19.2:
+      Successfully uninstalled jedi-0.19.2
+  Attempting uninstall: importlib-resources
+    Found existing installation: importlib_resources 6.5.2
+    Uninstalling importlib_resources-6.5.2:
+      Successfully uninstalled importlib_resources-6.5.2
+  Attempting uninstall: importlib-metadata
+    Found existing installation: importlib_metadata 8.6.1
+    Uninstalling importlib_metadata-8.6.1:
+      Successfully uninstalled importlib_metadata-8.6.1
+  Attempting uninstall: seekpath
+    Found existing installation: seekpath 2.1.0
+    Uninstalling seekpath-2.1.0:
+      Successfully uninstalled seekpath-2.1.0
+  Attempting uninstall: plotly
+    Found existing installation: plotly 6.0.0
+    Uninstalling plotly-6.0.0:
+      Successfully uninstalled plotly-6.0.0
+  Attempting uninstall: paramiko
+    Found existing installation: paramiko 3.5.1
+    Uninstalling paramiko-3.5.1:
+      Successfully uninstalled paramiko-3.5.1
+  Attempting uninstall: widgetsnbextension
+    Found existing installation: widgetsnbextension 4.0.14
+    Uninstalling widgetsnbextension-4.0.14:
+      Successfully uninstalled widgetsnbextension-4.0.14
+  Attempting uninstall: ipywidgets
+    Found existing installation: ipywidgets 8.1.7
+    Uninstalling ipywidgets-8.1.7:
+      Successfully uninstalled ipywidgets-8.1.7
+  Attempting uninstall: nglview
+    Found existing installation: nglview 3.1.4
+    Uninstalling nglview-3.1.4:
+      Successfully uninstalled nglview-3.1.4
+Successfully installed Mako-1.3.10 PyCifRW-4.4.6 adjustText-1.3.0 aiida-core-2.6.4 aiida-pseudo-1.7.1 aiida-quantumespresso-4.10.0 aiida-wannier90-2.2.0 aiida-wannier90-workflows-2.3.0 aiidalab-24.9.0 aiidalab-qe-25.3.0 aiidalab-widgets-base-2.4.0 aio-pika-6.8.1 aiormq-3.3.1 alembic-1.16.2 ansi2html-1.9.2 anywidget-0.9.13 appdirs-1.4.4 archive-path-0.4.2 async-generator-1.10 bokeh-2.4.3 cachecontrol-0.13.1 cachetools-4.2.4 castepinput-0.1.10 cattrs-25.1.1 circus-0.18.0 click-spinner-0.1.10 cmcrameri-1.9 colorama-0.4.6 deprecation-2.1.0 disk-objectstore-1.3.0 docopt-0.6.2 docstring-parser-0.16 doped-3.0.0 dulwich-0.22.8 easyunfold-0.3.10 elementpath-4.8.0 email-validator-2.2.0 filelock-3.18.0 flexcache-0.3 flexparser-0.4 future-1.0.0 graphviz-0.21 hiphive-1.4 humanfriendly-10.0 importlib-metadata-6.11.0 importlib-resources-5.13.0 ipyoptimade-0.2.0 ipytree-0.2.2 ipywidgets-7.7.4 ipywidgets-extended-1.1.1 jedi-0.18.2 jupyterlab-widgets-1.1.11 kiwipy-0.7.8 lark-1.2.2 matplotlib-label-lines-0.8.1 more-itertools-10.7.0 multidict-6.5.0 nglview-3.0.8 num2words-0.5.14 optimade-1.0.6 pamqp-2.3.0 paramiko-2.12.0 pgsu-0.2.4 pint-0.24.4 plotly-5.24.1 plumpy-0.21.11 ply-3.11 propcache-0.3.2 psutil-5.9.8 psycopg2-binary-2.9.10 psygnal-0.13.0 pydefect-0.9.7 pymysql-0.9.3 pytray-0.3.4 pytz-2021.3 qe-tools-2.3.0 requests-cache-1.2.1 seekpath-1.9.7 semver-3.0.4 shakenbreak-3.3.6 shortuuid-1.0.13 sqlalchemy-2.0.41 table_widget-0.0.3 tenacity-9.1.2 toml-0.10.2 trainstation-1.1 upf_to_json-0.9.5 url-normalize-2.2.1 vapory-0.1.2 vise-0.9.5 watchdog-4.0.2 widget_periodictable-3.1.1 widgetsnbextension-3.6.2 xmlschema-2.5.1 yarl-1.20.1

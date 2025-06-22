@@ -1,0 +1,6 @@
+{
+    "vis_wf": "flowchart TD\n    3b2dda60-be05-4efb-95ba-dfe54189758d(relax 1) -->|dir_name, structure| fe22fa88-48e8-4fef-a0dd-f6523e66168d(relax 2)\n    3b2dda60-be05-4efb-95ba-dfe54189758d(relax 1)\n    fe22fa88-48e8-4fef-a0dd-f6523e66168d(relax 2)",
+    "project": "wf_dr_gpu",
+    "flow_identifier": "wf_instance_kvo_drelax",
+    "response": "['13648', '13649']"
+}
